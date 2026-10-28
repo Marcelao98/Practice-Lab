@@ -1,0 +1,37 @@
+Marcelo:~/Practice-Lab/linux/TLCL$ #Let's type random gibberish just like the book told me to
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$  HeroevillivespythonmonstereveryonE 
+bash: HeroevillivespythonmonstereveryonE: comando não encontrado...
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Ok now the book says a simple command to show the date, lets see how simple it is
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ date
+ter 27 out 2026 20:38:48 -05
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Yeah the date is wrong on my computer, gotta sovle this later, worng timezone
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Now its about how much i've used my poor ppor computer
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ uptime
+ 20:39:29 up 12:14,  1 user,  load average: 0,18, 0,33, 0,56
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #ok so far
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #See the amount of memory
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ df
+Sist. Arq.     Blocos de 1K    Usado Disponível Uso% Montado em
+/dev/nvme0n1p3    247346176 43638284  202606612  18% /
+devtmpfs            3684764        0    3684764   0% /dev
+tmpfs               3758680       16    3758664   1% /dev/shm
+efivarfs                128       20        104  16% /sys/firmware/efi/efivars
+tmpfs               1503472     1816    1501656   1% /run
+none                   1024        0       1024   0% /run/credentials/systemd-journald.service
+none                   1024        0       1024   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p3    247346176 43638284  202606612  18% /home
+tmpfs               3758680      472    3758208   1% /tmp
+/dev/nvme0n1p2      1992552   395128    1476184  22% /boot
+/dev/nvme0n1p1       613184    20496     592688   4% /boot/efi
+tmpfs                751736     8204     743532   2% /run/user/1000
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Feels good man
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Now let's try and see the amount of free memory
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ free
+               total        used        free      shared  buff/cache   available
+Mem:         7517360     4706440      421200       87732     2264096     2810920
+Swap:        7517180     1472228     6044952
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #Not so fun now, damn haha
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #he says about the exit, well i don't really need to type that in here to know what it does i think
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ #And so it end, teh first book. Not so scary... at least so far. let's register this on git.
+meduardo@Marcelo:~/Practice-Lab/linux/TLCL$ 
+
