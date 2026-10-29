@@ -1,0 +1,1000 @@
+   41  cd 'Projeto Null'
+   42  ls
+   43  cd livros
+   44  wget -o "Eletronics" [200~https://physics.bu.edu/adlab_and_elab/wp-content/uploads/2023/03/Thomas-C.-Hayes-Paul-Horowitz-The-Art-of-Electronics-Student-Manual-Cambridge-University-Press-1989.pdf~wget -O "Electronics.pdf" "https://physics.bu.edu/adlab_and_elab/wp-content/uploads/2023/03/Thomas-C.-Hayes-Paul-Horowitz-The-Art-of-Electronics-Student-Manual-Cambridge-University-Press-1989.pdf"
+   45  wget -O "Electronics.pdf" "https://physics.bu.edu/adlab_and_elab/wp-content/uploads/2023/03/Thomas-C.-Hayes-Paul-Horowitz-The-Art-of-Electronics-Student-Manual-Cambridge-University-Press-1989.pdf"
+   46  claude
+   47  wget -O "The-Linux-Command-Line.pdf" "https://linuxclass.heinz.cmu.edu/doc/TLCL-25.12.pdf"
+   48  ls
+   49  cd Documentos 
+   50  ls
+   51  cd Repositórios
+   52  git clone https://github.com/Marcelao98/projeto-natty
+   53  claude 
+   54  ls
+   55  rm -r kofnativo-correcao
+   56  rm -r kofnativo-modo-pagina
+   57  ls
+   58  cd ~/programas
+   59  cd /Programas
+   60  ls
+   61  cd ~/Programas
+   62  sudo dnd install curl -y
+   63  sudo dnf install curl -y
+   64  URL=$(curl -s https://api.github.com/repos/upscayl/upscayl/releases/latest | grep browser_download_url | grep -i 'AppImage' | head -n 1 | cut -d '"' -f 4)
+   65  wget -O Upscayl.AppImage "$URL"
+   66  flatpak --version
+   67  flatpak install flathub org.upscayl.Upscayl
+   68  ls
+   69  cd Downlaods
+   70  cd Downloads
+   71  ls
+   72  cd Imagens
+   73  mkdir Wallpapers
+   74  ls
+   75  cd --
+   76  ls
+   77  cd Downloads
+   78  ls
+   79  mv ~/01-crossroads.jp ~/Imagens/Wallpapers
+   80  mv ~/Downloads/01-crossroads.jpg ~/Imagens/Wallpapers/
+   81  mv 01-crossroads.jpg ~/Imagens/Wallpapers/
+   82  ls
+   83  ls Documentos
+   84  cd Games
+   85  cd Documentos
+   86  cd Games
+   87  ls
+   88  cd -
+   89  rm Games
+   90  rm -r Games
+   91  ls
+   92  mv KOFlibrary ~/Programas/
+   93  ls
+   94  cd -
+   95  cd --
+   96  ls
+   97  cd Programas
+   98  ls
+   99  cd KOf
+  100  cd Kof
+  101  ls
+  102  cd -
+  103  rm -r Kof
+  104  ls
+  105  rm -r Kof4j
+  106  ls
+  107  rm -r Kof4j
+  108  rm -rf Kof46
+  109  rm -rf Kof4j
+  110  ls
+  111  cd -
+  112  cd --
+  113  ls
+  114  cd Documentos
+  115  ls
+  116  mv Repositórios ~/Programas/
+  117  ls
+  118  md practice-lab ~/Programas/Repositórios
+  119  mv practice-lab /Programas/Repositórios
+  120  mv pracice-lab ~/Programas/
+  121  mv practice-lab ~/Programas/
+  122  ls
+  123  cd -
+  124  cd Programas
+  125  ls
+  126  mv practice-lab ~/Repositórios/
+  127  sudo dnf install 7zip zip unzip
+  128  ls
+  129  cd Programas
+  130  ls
+  131  cd 'Kof Games'
+  132  ls
+  133  cd Games
+  134  ls
+  135  cd snes
+  136  ls
+  137  find . -type f -iname '*.7z' | wc -l
+  138  7zz --version
+  139  7z --version
+  140  7z
+  141  find . -maxdepth 1 -type f -iname '*.7z' | wc -l
+  142  ls -1 *.7z | head -5
+  143  7z l "2020 Super Baseball.7z"
+  144  meduardo@Marcelo:~/Programas/Kof Games$ cd Games
+  145  meduardo@Marcelo:~/Programas/Kof Games/Games$ tmp=$(mktemp -d) && 7z x "2020 Super Baseball.7z" "-o$tmp" >/dev/null && (cd "$tmp" && zip -q "$OLDPWD/2020 Super Baseball.zip" ./*.smc) && rm -rf "$tmp"
+  146  ERROR: errno=2 : Arquivo ou diretório inexistente
+  147  2020 Super Baseball.7z
+  148  System ERROR:
+  149  errno=2 : Arquivo ou diretório inexistente
+  150  meduardo@Marcelo:~/Programas/Kof Games/Games$ 
+  151  tmp=$(mktemp -d) && 7z x "2020 Super Baseball.7z" "-o$tmp" >/dev/null && (cd "$tmp" && zip -q "$OLDPWD/2020 Super Baseball.zip" ./*.smc) && rm -rf "$tmp"
+  152  7z t "2020 Super Baseball.zip"
+  153  cd
+  154  ls
+  155  cd Programas
+  156  cd
+  157  ls
+  158  cd Programas
+  159  ls
+  160  cd 'Kof Games'
+  161  ls
+  162  cd Games
+  163  tmp=$(mktemp -d) && 7z x "2020 Super Baseball.7z" "-o$tmp" >/dev/null && (cd "$tmp" && zip -q "$OLDPWD/2020 Super Baseball.zip" ./*.smc) && rm -rf "$tmp"
+  164  7z l "2020 Super Baseball.zip"
+  165  ls
+  166  snes
+  167  cd snes
+  168  7z l "2020 Super Baseball.zip"
+  169  mkdir -p descompactado
+  170  find . -maxdepth 1 -type f -iname '*.7z' -print0 | while IFS= read -r -d '' arquivo; do     nome=$(basename "$arquivo");     nome="${nome%.*}";     destino="descompactado/$nome";      mkdir -p "$destino";      if 7z x "$arquivo" "-o$destino" -y >/dev/null; then         echo "OK: $nome";     else         echo "ERRO: $nome — conferir manualmente";     fi; done
+  171  ls
+  172  cd descompactado
+  173  ls
+  174  find . -type f | grep -Ei '\(U\)|\(J\)' | head -30
+  175  find . -type f | grep -Eic '\(U\)'
+  176  find . -type f | grep -Eic '\(J\)'
+  177  find . -type f -iname '*\(J\)*' -print0 | while IFS= read -r -d '' arquivo; do     pasta="${arquivo%/*}";      if find "$pasta" -maxdepth 1 -type f -iname '*\(U\)*' -print -quit | grep -q .; then         printf '%s\n' "$arquivo";     fi; done | wc -l
+  178  find . -type f -iname '*\(J\)*' -print0 | while IFS= read -r -d '' arquivo; do     pasta="${arquivo%/*}";      if find "$pasta" -maxdepth 1 -type f -iname '*\(U\)*' -print -quit | grep -q .; then         printf '%s\n' "$arquivo";     fi; done | wc -l
+  179  find . -type f -iname '*\(J\)*' -print0 | while IFS= read -r -d '' arquivo; do     [[ "$arquivo" == *"[T+Por"* ]] && continue;     pasta="${arquivo%/*}";      if find "$pasta" -maxdepth 1 -type f -iname '*\(U\)*' -print -quit | grep -q .; then         printf '%s\n' "$arquivo";     fi; done | head -50
+  180  find . -type f -iname '*\(J\)*' -print0 | while IFS= read -r -d '' arquivo; do     [[ "$arquivo" == *"[T+Por"* ]] && continue;     pasta="${arquivo%/*}";      if find "$pasta" -maxdepth 1 -type f -iname '*\(U\)*' -print -quit | grep -q .; then         printf '%s\n' "$arquivo";     fi; done > ~/roms_japonesas_candidatas.txt
+  181  s
+  182  less ~/roms_japonesas_candidatas.txt
+  183  s
+  184  cd "$HOME/Programas/Kof Games/Games/snes/descompactado"
+  185  while IFS= read -r arquivo; do     if [[ -f "$arquivo" ]]; then         rm -- "$arquivo";     fi; done < "$HOME/roms_japonesas_candidatas.txt"
+  186  find . -type f | grep -Eic '\(J\)'
+  187  find . -type f -iname '*\(J\)*' -print0 | while IFS= read -r -d '' arquivo; do     pasta="${arquivo%/*}";     if find "$pasta" -maxdepth 1 -type f -iname '*\(U\)*' -print -quit | grep -q .; then         printf '%s\n' "$arquivo";     fi; done | head -20
+  188  find . -type f -iname '*\(J\)*' > ~/roms_japonesas_restantes.txt
+  189  cat > analisar_roms.py <<'PY'
+  190  from pathlib import Path
+  191  import csv
+  192  import re
+  193  RAIZ = Path.cwd()
+  194  LISTA_REMOVIDAS = Path.home() / "roms_japonesas_candidatas.txt"
+  195  LISTA_RESTANTES = Path.home() / "roms_japonesas_restantes.txt"
+  196  SAIDA = Path.home() / "analise_roms_japonesas.csv"
+  197  def ler_lista(caminho):
+  198      if not caminho.exists():
+  199          return []
+  200      return [
+  201          linha.strip()
+  202          for linha in caminho.read_text(encoding="utf-8").splitlines()
+  203          if linha.strip()
+  204      ]
+  205  removidas = set(ler_lista(LISTA_REMOVIDAS))
+  206  restantes = set(ler_lista(LISTA_RESTANTES))
+  207  # A lista de removidas tem prioridade para identificar o estado anterior.
+  208  registros = {}
+  209  for caminho in removidas:
+  210      registros[caminho] = "removida pela regra anterior"
+  211  for caminho in restantes:
+  212      registros[caminho] = "preservada"
+  213  def analisar(caminho, estado):
+  214      nome = Path(caminho).name
+  215      pasta = RAIZ / Path(caminho).parent
+  216      traducoes = re.findall(
+  217          r"\[T\+([A-Za-z]{2,3})",
+  218          nome,
+  219          flags=re.IGNORECASE
+  220      )
+  221      tags = re.findall(r"\[([^\]]+)\]", nome)
+  222      hacks = [
+  223          tag for tag in tags
+  224          if re.fullmatch(r"[hbfao]\d+[A-Za-z]*", tag, re.IGNORECASE)
+  225      ]
+  226      revisoes = [
+  227          tag for tag in tags
+  228          if re.fullmatch(r"\d+", tag)
+  229          or re.match(r"V\d", tag, re.IGNORECASE)
+  230      ]
+  231      tem_americana = any(
+  232          "(u)" in arquivo.name.lower()
+  233          for arquivo in pasta.iterdir()
+  234          if arquivo.is_file()
+  235      ) if pasta.is_dir() else False
+  236      if any(t.lower() == "por" for t in traducoes):
+  237          classificacao = "tradução portuguesa"
+  238      elif traducoes:
+  239          classificacao = "tradução para outro idioma"
+  240      elif hacks:
+  241          classificacao = "hack ou variante modificada"
+  242      else:
+  243          classificacao = "sem tradução identificada pelo nome"
+  244      return {
+  245          "jogo": Path(caminho).parent.name,
+  246          "arquivo": nome,
+  247          "caminho": caminho,
+  248          "estado": estado,
+  249          "tem_versao_americana_na_pasta": tem_americana,
+  250          "idiomas_de_traducao": ", ".join(traducoes),
+  251          "marcadores_de_hack": ", ".join(hacks),
+  252          "outros_marcadores": ", ".join(tags),
+  253          "classificacao_inicial": classificacao,
+  254      }
+  255  colunas = [
+  256      "jogo",
+  257      "arquivo",
+  258      "caminho",
+  259      "estado",
+  260      "tem_versao_americana_na_pasta",
+  261      "idiomas_de_traducao",
+  262      "marcadores_de_hack",
+  263      "outros_marcadores",
+  264      "classificacao_inicial",
+  265  ]
+  266  with SAIDA.open("w", newline="", encoding="utf-8-sig") as arquivo_csv:
+  267      escritor = csv.DictWriter(arquivo_csv, fieldnames=colunas)
+  268      escritor.writeheader()
+  269      for caminho, estado in sorted(registros.items()):
+  270          escritor.writerow(analisar(caminho, estado))
+  271  print(f"Relatório salvo em: {SAIDA}")
+  272  print(f"Registros analisados: {len(registros)}")
+  273  print(f"Removidas pela regra anterior: {len(removidas)}")
+  274  print(f"Preservadas: {len(restantes)}")
+  275  PY
+  276  python3 analisar_roms.py
+  277  python3 -c "import csv,collections,pathlib; p=pathlib.Path.home()/'analise_roms_japonesas.csv'; r=list(csv.DictReader(p.open(encoding='utf-8-sig'))); print('Total:',len(r)); print('\nClassificações:'); print(*[f'{k}: {v}' for k,v in collections.Counter(x['classificacao_inicial'] for x in r).most_common()],sep='\n')"
+  278  python3 - <<'PY'
+  279  import csv
+  280  from pathlib import Path
+  281  arquivo = Path.home() / "analise_roms_japonesas.csv"
+  282  saida = Path.home() / "candidatas_ao_descarte.csv"
+  283  with arquivo.open(encoding="utf-8-sig", newline="") as f:
+  284      registros = list(csv.DictReader(f))
+  285  categorias = {
+  286      "sem tradução identificada pelo nome",
+  287      "tradução para outro idioma",
+  288  }
+  289  candidatas = [
+  290      r for r in registros
+  291      if r["estado"] == "preservada"
+  292      and r["classificacao_inicial"] in categorias
+  293      and r["tem_versao_americana_na_pasta"] == "True"
+  294  ]
+  295  with saida.open("w", encoding="utf-8-sig", newline="") as f:
+  296      campos = ["jogo", "arquivo", "caminho", "classificacao_inicial"]
+  297      escritor = csv.DictWriter(f, fieldnames=campos)
+  298      escritor.writeheader()
+  299      escritor.writerows({c: r[c] for c in campos} for r in candidatas)
+  300  print(f"Candidatas encontradas: {len(candidatas)}")
+  301  print(f"Relatório: {saida}")
+  302  PY
+  303  libreoffice ~/candidatas_ao_descarte.csv
+  304  python3 - <<'PY'
+  305  import csv
+  306  from pathlib import Path
+  307  from collections import Counter
+  308  arquivo = Path.home() / "analise_roms_japonesas.csv"
+  309  with arquivo.open(encoding="utf-8-sig", newline="") as f:
+  310      registros = list(csv.DictReader(f))
+  311  print("Total de registros:", len(registros))
+  312  print("\nEstados:")
+  313  print(Counter(r["estado"] for r in registros))
+  314  print("\nClassificações:")
+  315  print(Counter(r["classificacao_inicial"] for r in registros))
+  316  print("\nVersão americana:")
+  317  print(Counter(r["tem_versao_americana_na_pasta"] for r in registros))
+  318  print("\nPrimeiro registro:")
+  319  print(registros[0] if registros else "CSV vazio")
+  320  PY
+  321  python3 - <<'PY'
+  322  import csv
+  323  from pathlib import Path
+  324  relatorio = Path.home() / "analise_roms_japonesas.csv"
+  325  saida = Path.home() / "hacks_para_excluir.csv"
+  326  with relatorio.open(encoding="utf-8-sig", newline="") as f:
+  327      registros = list(csv.DictReader(f))
+  328  candidatas = []
+  329  for r in registros:
+  330      if r["estado"] != "preservada":
+  331          continue
+  332      if r["classificacao_inicial"] != "hack ou variante modificada":
+  333          continue
+  334      caminho = Path(r["caminho"])
+  335      if not caminho.is_absolute():
+  336          caminho = Path.cwd() / caminho
+  337      if caminho.is_file():
+  338          candidatas.append({
+  339              "jogo": r["jogo"],
+  340              "arquivo": caminho.name,
+  341              "caminho": str(caminho),
+  342              "marcadores": r["marcadores_de_hack"],
+  343          })
+  344  with saida.open("w", encoding="utf-8-sig", newline="") as f:
+  345      campos = ["jogo", "arquivo", "caminho", "marcadores"]
+  346      escritor = csv.DictWriter(f, fieldnames=campos)
+  347      escritor.writeheader()
+  348      escritor.writerows(candidatas)
+  349  print(f"Hacks/variantes encontradas: {len(candidatas)}")
+  350  print(f"Lista salva em: {saida}")
+  351  print("Nenhum arquivo foi apagado.")
+  352  PY
+  353  python3 - <<'PY'
+  354  import csv
+  355  from collections import Counter
+  356  from pathlib import Path
+  357  arquivo = Path.home() / "hacks_para_excluir.csv"
+  358  with arquivo.open(encoding="utf-8-sig", newline="") as f:
+  359      registros = list(csv.DictReader(f))
+  360  contagem = Counter(
+  361      r["marcadores"].strip() or "(sem marcador)"
+  362      for r in registros
+  363  )
+  364  print("Marcadores encontrados:")
+  365  for marcador, quantidade in contagem.most_common(30):
+  366      print(f"{quantidade:4}  {marcador}")
+  367  PY
+  368  python3 - <<'PY'
+  369  import csv
+  370  from pathlib import Path
+  371  lista = Path.home() / "hacks_para_excluir.csv"
+  372  with lista.open(encoding="utf-8-sig", newline="") as f:
+  373      registros = list(csv.DictReader(f))
+  374  apagadas = 0
+  375  ausentes = 0
+  376  erros = 0
+  377  for r in registros:
+  378      caminho = Path(r["caminho"])
+  379      if not caminho.is_absolute():
+  380          caminho = Path.cwd() / caminho
+  381      try:
+  382          if caminho.is_file():
+  383              caminho.unlink()
+  384              apagadas += 1
+  385          else:
+  386              ausentes += 1
+  387      except OSError as e:
+  388          print(f"ERRO: {caminho}: {e}")
+  389          erros += 1
+  390  print("\n--- RESULTADO ---")
+  391  print(f"Arquivos apagados: {apagadas}")
+  392  print(f"Já ausentes:      {ausentes}")
+  393  print(f"Erros:            {erros}")
+  394  print("Os arquivos .7z originais não foram alterados.")
+  395  PY
+  396  python3 - <<'PY'
+  397  from pathlib import Path
+  398  from zipfile import ZipFile, ZIP_DEFLATED
+  399  origem = Path.home() / "Programas/Kof Games/Games/snes/descompactado"
+  400  destino = origem.parent / "ZIPs_curados"
+  401  extensoes = {".smc", ".sfc", ".swc", ".fig", ".bin"}
+  402  destino.mkdir(parents=True, exist_ok=True)
+  403  criados = 0
+  404  ignorados = 0
+  405  total_roms = 0
+  406  for pasta in sorted(origem.iterdir()):
+  407      if not pasta.is_dir():
+  408          continue
+  409      roms = [
+  410          arquivo for arquivo in pasta.rglob("*")
+  411          if arquivo.is_file() and arquivo.suffix.lower() in extensoes
+  412      ]
+  413      if not roms:
+  414          ignorados += 1
+  415          continue
+  416      zip_saida = destino / f"{pasta.name}.zip"
+  417      if zip_saida.exists():
+  418          print(f"Já existe, ignorando: {zip_saida.name}")
+  419          ignorados += 1
+  420          continue
+  421      with ZipFile(zip_saida, "w", ZIP_DEFLATED) as z:
+  422          for rom in roms:
+  423              z.write(rom, rom.relative_to(pasta))
+  424      
+  425      criados += 1
+  426      total_roms += len(roms)
+  427  print("\n--- EMPACOTAMENTO CONCLUÍDO ---")
+  428  print(f"ZIPs criados: {criados}")
+  429  print(f"ROMs empacotadas: {total_roms}")
+  430  print(f"Pastas ignoradas: {ignorados}")
+  431  print(f"Destino: {destino}")
+  432  PY
+  433  rm -- *.7z
+  434  ls
+  435  mv "Nome da Pasta"/* .
+  436  mv ZIPs_curados/* .
+  437  echo 'Hello World'
+  438  pwd
+  439  ls
+  440  rm -f *.csv
+  441  ls
+  442  rm -f *.txt
+  443  cd Repositórios
+  444  ls
+  445  cd python
+  446  ls
+  447  cd -
+  448  ls
+  449  mkdir linux
+  450  cd linux
+  451  TLCL
+  452  mkdir TLCL
+  453  ls
+  454  cd -
+  455  cd --
+  456  ls
+  457  mv Repositórios Practice-Lab
+  458  ls
+  459  cd Practice-Lab
+  460  git add -A
+  461  git commit -M 'Added a new folder about linux'
+  462  git commit -m 'Added a new folder about linux programming'
+  463  git init
+  464  git branch
+  465  git status
+  466  git add A
+  467  git add -A
+  468  git commit -m 'Restarting this damn thing'
+  469  git add -A
+  470  gi add -a
+  471  git add -a
+  472  git add -A
+  473  git commit m "Added a Linux section, lets try this terminal coding stuff haha"
+  474  git commit -m "Added a Linux section, lets try this terminal coding stuff, am i a hacker now"
+  475  ro: pathspec 'm' não correspondeu a nenhum arquivo conhecido pelo git
+  476  erro: pathspec 'Added a Linux section, lets try this terminal coding stuff haha' não correspondeu a nenhum arquivo conhecido pelo git
+  477  meduardo@Marcelo:~/Practice-Lab$ git commit -m "Added a Linux section, lets try this terminal coding stuff, am i a hacker now"
+  478  No branch main
+  479  nada para fazer commit, árvore de trabalho limpa
+  480  meduardo@Marcelo:~/Practice-Lab$ 
+  481  git status
+  482  git log --oneline --all -5
+  483  t branch -avv
+  484  git rev-parse --show-toplevel
+  485  git ls-files
+  486  ls -la
+  487  git status
+  488  git log --oneline --all -5
+  489  git branch -avv
+  490  git rev-parse --show-toplevel
+  491  git ls-files
+  492  ls -la
+  493  s
+  494  find linux python -type f
+  495  ls
+  496  git status --untracked-files=all
+  497  ls
+  498  linux
+  499  cd linux
+  500  ls
+  501  cd TLCL
+  502  s
+  503  cat > README.txt <<'EOF'
+  504  THE LINUX COMMAND LINE
+  505  William Shotts
+  506  This directory contains my personal notes and exercises while
+  507  studying The Linux Command Line.
+  508  PURPOSE
+  509  - Learn Linux command-line fundamentals.
+  510  - Practice commands directly in the terminal.
+  511  - Record notes, examples, and useful observations.
+  512  - Track my progress through the book.
+  513  APPROACH
+  514  All programming and shell exercises are written and tested by me.
+  515  Text files may contain study notes, explanations, and references.
+  516  The goal is to understand the material through practice, not
+  517  just to copy commands without understanding them.
+  518  EOF
+  519  ls
+  520  cd -
+  521  cd --
+  522  cd -
+  523  cd  cd..
+  524  cd ..
+  525  git add -A
+  526  git status
+  527  git commit -m "Added a README fOR The-Linux-Command-Line book"
+  528  cd linun/tlcl
+  529  cd linux
+  530  ls
+  531  cd TLCL
+  532  ls
+  533  cd Practice-Lab
+  534  cd Linux
+  535  ls
+  536  cd linux
+  537  cd TLDL
+  538  cd TLCL
+  539  jkajshdkjashdkjasd
+  540  date
+  541  uptime
+  542  df
+  543  free
+  544  exit
+  545  ls
+  546  find . -mindepth 2 -type f | head -20
+  547  find . -mindepth 2 -type f -printf '%f\n' | sort | uniq -d | head -20
+  548  find . -mindepth 2 -type f -printf '%f\n' | sort | uniq -d | head -20find . -mindepth 2 -type f -exec mv -n -t . -- {} +
+  549  ick Off 3 - European Challenge (U) [h3].zip
+  550  ./K/Kid Chameleon (JUE) [!].zip
+  551  ./K/Kid Chameleon (JUE) [b1].zip
+  552  ./K/Kid Chameleon (JUE) [h1].zip
+  553  ./K/Kid Chameleon (JUE) [t1].zip
+  554  ./K/Killing Game Show (U) [h1].zip
+  555  ./K/Killing Game Show (U).zip
+  556  ./K/Killing Game Show - 1993 Remix (JUE).zip
+  557  ./K/King Colossus (J) [b1].zip
+  558  meduardo@Marcelo:~/Programas/Kof Games/Games/DESCOMPCATADO SEGA/Segfile:⁄⁄⁄home⁄meduardo⁄Downloads⁄Sega Genesis (Mega Drive) & Sega 32X Complete Romset.zipa Genesis (Mega Drive) & Sega 32X Complete Romset$ find . -mindepth 2 -type f -printf '%f\n' | sort | uniq -d | head -20
+  559  Fatal Labyrinth (JU) [!].zip
+  560  meduardo@Marcelo:~/Programas/Kof Games/Games/DESCOMPCATADO SEGA/Segfile:⁄⁄⁄home⁄meduardo⁄Downloads⁄Sega Genesis (Mega Drive) & Sega 32X Complete Romset.zipa Genesis (Mega Drive) & Sega 32X Complete Romset$ 
+  561  find . -mindepth 2 -type f -exec mv -n -t . -- {} +
+  562  ls
+  563  #Let's type random gibberish just like the book told me to
+  564   HeroevillivespythonmonstereveryonE 
+  565  #Ok now the book says a simple command to show the date, lets see how simple it is
+  566  date
+  567  #Yeah the date is wrong on my computer, gotta sovle this later, worng timezone
+  568  #Now its about how much i've used my poor ppor computer
+  569  uptime
+  570  #ok so far
+  571  #See the amount of memory
+  572  df
+  573  #Feels good man
+  574  #Now let's try and see the amount of free memory
+  575  free
+  576  #Not so fun now, damn haha
+  577  #he says about the exit, well i don't really need to type that in here to know what it does i think
+  578  #And so it end, teh first book. Not so scary... at least so far. let's register this on git.
+  579  nano chapter-01.md
+  580  nano chapter-01.txt
+  581  ls
+  582  git add chapter-01.txt
+  583  git commit -m "Saving TLCL chapter 1 termianl session. Am I a hacker yet?"
+  584  cd ..
+  585  ls
+  586  cd Documentos
+  587  ls
+  588  cd 'Projeto null'
+  589  cd 'Projeto Null'
+  590  ls
+  591  mv livros ~/Documentos/
+  592  ls
+  593  cd ..
+  594  ls
+  595  mv livros Livros
+  596  ls
+  597  cd Livros 
+  598  ls
+  599  mkdir Tecnologia
+  600  ls
+  601  cd ~/Documentos/Livros || exit 1
+  602  # Criar a estrutura de pastas
+  603  mkdir -p   Engenharia/Eletrica   Engenharia/Eletronica   Engenharia/Controle_e_Automacao   Engenharia/Computacao_Embarcada   Tecnologia/Programacao   Tecnologia/Sistemas_e_Linux   Tecnologia/Redes   Tecnologia/Dados_e_IA   Ciencias_Exatas/Matematica   Ciencias_Exatas/Fisica   Humanidades/Filosofia   Humanidades/Historia   Humanidades/Psicologia   Economia_e_Negocios   Literatura   A_Classificar
+  604  # Mover os livros que já conhecemos
+  605  if [ -f "Python Crash Course.pdf" ]; then   mv -- "Python Crash Course.pdf" Tecnologia/Programacao/; fi
+  606  if [ -f "Rust.pdf" ]; then   mv -- "Rust.pdf" Tecnologia/Programacao/; fi
+  607  if [ -f "The-Linux-Command-Line.pdf" ]; then   mv -- "The-Linux-Command-Line.pdf" Tecnologia/Sistemas_e_Linux/; fi
+  608  if [ -f "Electronics.pdf" ]; then   mv -- "Electronics.pdf" Engenharia/Eletronica/; fi
+  609  # Remover as pastas antigas somente se estiverem vazias
+  610  rmdir Tecnologia/Eletronica Eletronics 2>/dev/null
+  611  # Mostrar o resultado
+  612  find . -maxdepth 3 -print | sort
+  613  ls
+  614  rm Eletronics
+  615  ls
+  616  find . -maxdepth 1 -type f | sort > roms.txt
+  617  head -20 roms.txt
+  618  meduardo@Marcelo:~$ find . -maxdepth 1 -type f | sort > roms.txt
+  619  meduardo@Marcelo:~$ head -20 roms.txt
+  620  ./.bash_history
+  621  ./.bash_logout
+  622  ./.bash_profile
+  623  ./.bashrc
+  624  ./.claude.json
+  625  ./.gitconfig
+  626  ./.gtkrc-2.0
+  627  ./Practice
+  628  ./roms.txt
+  629  meduardo@Marcelo
+  630  find . -maxdepth 1 -type f | sort > roms.txt
+  631  head -20 roms.txt
+  632  wc -l roms.txt
+  633  find . -maxdepth 1 -type f ! -name 'roms.txt' | sort > roms.txt
+  634  head -20 roms.txt
+  635  find . -maxdepth 1 -type f ! -name 'roms.txt' | sort > roms.txt
+  636  head -20 roms.txt
+  637  grep -oE '\((USA|Europe|Japan|World|U|E|J|W|JU|UE)\)' roms.txt | sort | uniq -c | sort -rn
+  638  grep -E '\(U\)|\(J\)|\(JU\)|\(E\)|\(UE\)|\(W\)' roms.txt | grep -vE '\[(b[0-9]*|h[0-9A-Za-z]*|t[0-9]*|a[0-9]*)\]' | head -30
+  639  \)' roms.txt | grep -vE '\[(b[0-9]*|h[0-9A-Za-z]*|t[0-9]*|a[0-9]*)\]' | head -30
+  640  ./16 Ton (J) [!].zip
+  641  ./36 Great Holes Starring Fred Couples 32X (E) [!].zip
+  642  ./36 Great Holes Starring Fred Couples 32X (JU) [!].zip
+  643  ./3 Ninjas Kick Back (U) (Pre-Release).zip
+  644  ./3 Ninjas Kick Back (U) [!].zip
+  645  ./688 Attack Sub (U) [!].zip
+  646  ./Aah! Harimanada (J).zip
+  647  ./Abrams Battle Tanks (U).zip
+  648  ./Addams Family, The (UE) [!].zip
+  649  ./Addams Family Values (U).zip
+  650  ./Advanced Daisenryaku (J) [p1][T+Chi].zip
+  651  ./Advanced Daisenryaku (J) [T+Eng.65_NebelwurferHQ].zip
+  652  ./Advanced Daisenryaku (J).zip
+  653  ./Advanced_Military_Commander_[T-nebelwurfer_-_40%_(U)]_-_genesis.zip
+  654  ./Advanced_Military_Commander_[T-nebelwurfer_-_60%_(U)]_-_genesis.zip
+  655  ./Adventures of Batman and Robin, The (E).zip
+  656  ./Adventures of Batman and Robin, The (JU) [!].zip
+  657  ./Aerobiz Supersonic (U) [!].zip
+  658  ./Aerobiz (U) [!].zip
+  659  ./Aero Blasters (JU) [!].zip
+  660  ./Aero the Acro-Bat 2 (E).zip
+  661  ./Aero the Acro-Bat 2 (U) [!].zip
+  662  ./Aero The Acrobat 2 (U).zip
+  663  ./Aero the Acro-Bat (U) [c][!].zip
+  664  ./After Burner II (J) [p1].zip
+  665  ./After Burner II (J).zip
+  666  ./After Burner II (U) [T+Por].zip
+  667  ./After Burner II (U) [!].zip
+  668  ./Air Busters (U) [c][!].zip
+  669  ./Air Diver (J) [p1].zip
+  670  python3 - <<'PY'
+  671  from pathlib import Path
+  672  import re
+  673  files = list(Path(".").glob("*.zip"))
+  674  def base(p):
+  675      s = p.stem
+  676      s = re.sub(r'\s*\((?:J|U|E|JU|UE|W)\)', '', s)
+  677      s = re.sub(r'\s*\[[^]]*\]', '', s)
+  678      return re.sub(r'[^a-z0-9]', '', s.lower())
+  679  groups = {}
+  680  for p in files:
+  681      groups.setdefault(base(p), []).append(p)
+  682  removed = 0
+  683  for p in files:
+  684      if not re.search(r'\(J\)', p.stem):
+  685          continue
+  686      if re.search(r'\[T[^]]*\]', p.stem, re.I):
+  687          continue
+  688      alternatives = [
+  689          q for q in groups[base(p)]
+  690          if q != p and (
+  691              re.search(r'\(U\)', q.stem)
+  692              or re.search(r'\[T[^]]*\]', q.stem, re.I)
+  693          )
+  694      ]
+  695      if alternatives:
+  696          p.unlink()
+  697          print(f"Removido: {p.name}")
+  698          removed += 1
+  699  print(f"\nTotal removido: {removed}")
+  700  PY
+  701  mkdir -p Traducoes-Portugues
+  702  find . -maxdepth 1 -type f -iname '*.zip'   | grep -iE '\[T\+Por(tuguese)?\]|\[Portuguese\]|\[PT-BR\]|\[Brazilian Portuguese\]'   | while IFS= read -r f; do mv -- "$f" Traducoes-Portugues/; done
+  703  find . -maxdepth 1 -type f -iname '*.zip' -print0 | while IFS= read -r -d '' f; do   if [[ "$f" =~ \[(h[0-9a-z]*|b[0-9]+|p[0-9]*|a[0-9]+|x|o[0-9]+|f[0-9]+|c)\] ]]; then     rm -- "$f";   fi; done
+  704  find . -maxdepth 1 -type f -iname '*.zip' | grep -iE '\[T[^]]*Por|\[T[^]]*PT-BR|\[T[^]]*Brazilian Portuguese|\[Portuguese\]|\[PT-BR\]'
+  705  find . -maxdepth 1 -type f -iname '*.zip' -print0 | while IFS= read -r -d '' f; do   if [[ "$f" =~ \[T[^]]*[Pp][Oo][Rr] ]]; then     mv -- "$f" Traducoes-Portugues/;   fi; done
+  706  find . -maxdepth 1 -type f -iname '*.zip' | grep -iE '\[T\+|\[T-|Translation|French|Spanish|German|Italian'
+  707  find . -maxdepth 1 -type f -iname '*.zip' -print0 | while IFS= read -r -d '' f; do   [[ "$f" == *"[T+"* || "$f" == *"[T-"* ]] && printf '%s\n' "$f"; done
+  708  find . -maxdepth 1 -type f -iname '*.zip' -print0 | while IFS= read -r -d '' f; do   if [[ "$f" =~ \[T[+-](Chi|Eng|Fre|Ger|Ita|Spa|Rus|Ser|Pol) ]]; then     rm -- "$f";   fi; done
+  709  find . -maxdepth 1 -type f -iname '*.zip' | wc -l
+  710  du -sh .
+  711  find . -maxdepth 1 -type f -iname '*.zip' | grep -oE '\((U|J|E|UE|JU|JUE|W)\)' | sort | uniq -c | sort -nr
+  712  for f in ./*.zip; do unzip -Z1 "$f" 2>/dev/null; done | sed 's/.*\.//' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr
+  713  unzip -Z1 "$(find . -maxdepth 1 -type f -iname '*.zip' -print -quit)"
+  714  unzip -p "$(find . -maxdepth 1 -type f -iname '*.zip' -print -quit)" | xxd -l 256
+  715  mkdir -p /tmp/sega-dats && cd /tmp/sega-dats
+  716  curl -fLO "https://raw.githubusercontent.com/libretro/libretro-database/master/metadat/no-intro/Sega%20-%20Mega%20Drive%20-%20Genesis.dat"
+  717  curl -fLO "https://raw.githubusercontent.com/libretro/libretro-database/master/metadat/no-intro/Sega%20-%20Master%20System%20-%20Mark%20III.dat"
+  718  curl -fLO "https://raw.githubusercontent.com/libretro/libretro-database/master/metadat/no-intro/Sega%20-%2032X.dat"
+  719  mv Traducoes-Portugues/*.zip .
+  720  rmdir Traducoes-Portugues
+  721  ls
+  722  cd ~/Programas/Kof\ Games/Games/Sega/Segfile:*
+  723  pwd
+  724  meduardo@Marcelo:~/Programas/Kof Games/Games/Sega/Segfile:⁄⁄⁄home⁄meduardo⁄Downloads⁄Sega Genesis (Mega Drive) & Sega 32X Complete Romset.zipa Genesis (Mega Drive) & Sega 32X Complete Romset$ pwd
+  725  /home/meduardo/Programas/Kof Games/Games/Sega/Segfile:⁄⁄⁄home⁄meduardo⁄Downloads⁄Sega Genesis (Mega Drive) & Sega 32X Complete Romset.zipa Genesis (Mega Drive) & Sega 32X Complete Romset
+  726  meduardo@Marcelo:~/Programas/Kof Games/Games/Sega/Segfile:⁄⁄⁄home⁄meduardo⁄Downloads⁄Sega Genesis (Mega Drive) & Sega 32X Complete Romset.zipa Genesis (Mega Drive) & Sega 32X Complete Romset$ 
+  727  ls -lh /tmp/sega-dats
+  728  cat > /tmp/classificar_sega.py <<'PY'
+  729  import os
+  730  import re
+  731  import zipfile
+  732  import zlib
+  733  import csv
+  734  from pathlib import Path
+  735  rom_dir = Path.cwd()
+  736  dat_dir = Path("/tmp/sega-dats")
+  737  catalogos = {
+  738      "Sega%20-%20Mega%20Drive%20-%20Genesis.dat": "Mega Drive / Genesis",
+  739      "Sega%20-%20Master%20System%20-%20Mark%20III.dat": "Master System",
+  740      "Sega%20-%2032X.dat": "Sega 32X",
+  741  }
+  742  crc_console = {}
+  743  for arquivo, console in catalogos.items():
+  744      texto = (dat_dir / arquivo).read_text(errors="ignore")
+  745      jogos = re.split(r"\bgame\s*\(", texto)
+  746      for jogo in jogos:
+  747          crc = re.search(r'\brom\s*\([^)]*crc\s+([0-9A-Fa-f]{8})', jogo)
+  748          if crc:
+  749              crc_console[crc.group(1).upper()] = console
+  750  resultado = []
+  751  for zip_path in sorted(rom_dir.glob("*.zip")):
+  752      try:
+  753          with zipfile.ZipFile(zip_path) as z:
+  754              membros = [m for m in z.infolist() if not m.is_dir()]
+  755              if len(membros) != 1:
+  756                  resultado.append([zip_path.name, "REVISAR: ZIP não contém uma ROM", ""])
+  757                  continue
+  758              membro = membros[0]
+  759              with z.open(membro) as f:
+  760                  crc = 0
+  761                  while True:
+  762                      bloco = f.read(1024 * 1024)
+  763                      if not bloco:
+  764                          break
+  765                      crc = zlib.crc32(bloco, crc)
+  766              console = crc_console.get(f"{crc & 0xffffffff:08X}", "NÃO IDENTIFICADO")
+  767              resultado.append([zip_path.name, console, membro.filename])
+  768      except Exception as e:
+  769          resultado.append([zip_path.name, f"ERRO: {e}", ""])
+  770  saida = rom_dir / "classificacao.csv"
+  771  with saida.open("w", newline="", encoding="utf-8-sig") as f:
+  772      w = csv.writer(f)
+  773      w.writerow(["Arquivo ZIP", "Console", "Arquivo interno"])
+  774      w.writerows(resultado)
+  775  from collections import Counter
+  776  contagem = Counter(r[1] for r in resultado)
+  777  print(f"\nRelatório criado: {saida}")
+  778  print(f"Total de ZIPs analisados: {len(resultado)}")
+  779  for console, total in contagem.most_common():
+  780      print(f"{console}: {total}")
+  781  PY
+  782  python3 /tmp/classificar_sega.py
+  783  claude code
+  784  grep -oE '\((U|J|JU)\)' roms.txt | sort | uniq -c
+  785  grep -oE '\([^)]*\)' roms.txt | sort | uniq -c | sort -rn | head -20
+  786  ping -c 20 1.1.1.1
+  787  Running cells with 'Python 3.14.3' requires the ipykernel package.
+  788  <a href='command:jupyter.createPythonEnvAndSelectController'>Create a Python Environment</a> with the required packages.
+  789  Or install 'ipykernel' using the command: '/usr/bin/python -m pip install ipykernel -U --user --force-reinstall'
+  790  /usr/bin/python -m pip install ipykernel -U --user --force-reinstall
+  791  pip install 
+  792  ! sudo dnf swap noopenh264 openh264 --enablerepo=fedora-cisco-openh264
+  793  claude 
+  794  git add -A
+  795  git status
+  796  git commit -m "Added the practice problems for the first chatoer, borign and basic stuff, i know, but hey, a promise is a promise"
+  797  ls
+  798  cd Practice-Lab
+  799  git add -A
+  800  git status
+  801  ls
+  802  cd python
+  803  ls
+  804  cd Crash-Course
+  805  ls
+  806  ls
+  807  cd Practice-Lab
+  808  python3 -m pip --version
+  809  python3 -m venv .venv
+  810  source .venv/bin/activate
+  811  python -m pip install ipykernel jupyter
+  812   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  813  ping -c 10 1.1.1.1
+  814  ping -c 10 google.com
+  815  ip route
+  816  default via 192.168.0.1 dev wlp2s0
+  817  192.168.0.0/24 dev wlp2s0 src 192.168.0.109
+  818  ping c -30 192.168.0.1
+  819  ping -c 30 192.168.0.1
+  820  iw dev wlp2s0 link
+  821  curl -L -o /dev/null -w '\nDNS: %{time_namelookup}s\nConexão: %{time_connect}s\nTempo total: %{time_total}s\nVelocidade média: %{speed_download} bytes/s\nHTTP: %{http_code}\n' 'https://speed.cloudflare.com/__down?bytes=10000000'
+  822  for url in   https://www.google.com/   https://www.youtube.com/   https://www.cloudflare.com/   https://www.wikipedia.org/; do   echo "=== $url ===";   curl -L -o /dev/null -sS     --max-time 15     -w 'DNS: %{time_namelookup}s | TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n'     "$url"; done
+  823  echo "========== 1. SISTEMA =========="
+  824  cat /etc/fedora-release
+  825  uname -r
+  826  echo "Sessão gráfica: $XDG_SESSION_TYPE"
+  827  echo "Ambiente: $XDG_CURRENT_DESKTOP"
+  828  echo
+  829  echo "========== 2. CARGA DO SISTEMA =========="
+  830  uptime
+  831  free -h
+  832  echo
+  833  ps -eo comm,%cpu,%mem --sort=-%cpu | head -n 10
+  834  echo
+  835  echo "========== 3. ARMAZENAMENTO =========="
+  836  df -h /
+  837  echo
+  838  lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS
+  839  echo
+  840  echo "========== 4. WI-FI =========="
+  841  nmcli -f DEVICE,TYPE,STATE,CONNECTION device status
+  842  iw dev wlp2s0 link 2>&1
+  843  echo
+  844  echo "========== 5. DNS =========="
+  845  cat /etc/resolv.conf
+  846  echo
+  847  resolvectl status 2>/dev/null | head -n 45
+  848  echo
+  849  echo "========== 6. SERVIÇOS DE REDE =========="
+  850  systemctl is-active NetworkManager
+  851  systemctl is-active systemd-resolved
+  852  echo
+  853  echo "========== 7. ERROS RECENTES DO SISTEMA =========="
+  854  journalctl -p err -b --no-pager -n 20 2>/dev/null
+  855  time resolvectl query www.cloudflare.com
+  856  time resolvectl query www.youtube.com
+  857  time resolvectl query www.wikipedia.org
+  858  watch -n 2 'iw dev wlp2s0 link'
+  859  ping -c 30 192.168.0.1
+  860  ping -c 30 1.1.1.1
+  861  ]echo "========== GOOGLE IPV4 =========="
+  862  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+  863  echo
+  864  echo "========== YOUTUBE IPV4 =========="
+  865  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+  866  echo
+  867  echo "========== YOUTUBE IPV6 =========="
+  868  curl -6 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+  869  444
+  870  echo "========== GOOGLE IPV4 =========="
+  871  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+  872  echo
+  873  echo "========== YOUTUBE IPV4 =========="
+  874  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+  875  echo
+  876  echo "========== YOUTUBE IPV6 =========="
+  877  curl -6 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+  878  ls
+  879  rm Chapter1.ipynb
+  880  ls
+  881  mv Chapter2iynb ./Documentos
+  882  mv Chapter2.ipynb Practice-Lab
+  883  ls
+  884  cd Practice-lab
+  885  ls
+  886  cd Practice-Lab
+  887  ls
+  888  mv Chapter2.ipynb python
+  889  cd python
+  890  ls
+  891  mv Chapter2.ipynb Crash-Course
+  892  ls
+  893  Crash-Course
+  894  cd Crash-Course
+  895  ls
+  896  cd ..
+  897  cd -
+  898   cd ...
+  899  cd ..
+  900   cd .
+  901   cd ..
+  902  git add -A
+  903  git commit -m "Added Chapter 2, yeah it is really boring and easy stuff, i know, its just to build some discipline"
+  904   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  905  cd
+  906  ls
+  907  cd Practice-Lab
+  908  #Okay here is the deal, i'm reading along the book and practicing stuff okay.
+  909  ls
+  910   ls /python
+  911  ls
+  912  #I'm just reading along TLTL (the linux terminal line, almost looks tile tldl haha, but its l oong and i'm gonna read the whole thing)
+  913  ls
+  914  ls ./python
+  915  ls ./python/Crash-Course
+  916  ls
+  917  ls ./linux/TLDL
+  918  ls ./linux
+  919  #Haha, ima de a typo in my brain, it's the Linux Command Line, not terminal line. DUh
+  920  ls ./linux/TLCL
+  921  #since chapter 2 is so short, i'm gonna make a txt for chapters 2 and 3 together
+  922  #cd is for going up and down and movign through the folders, sueful stuff, ls is for lsitign the stuff in the foulder
+  923  cd python
+  924  cd Crash-Course
+  925  cd -
+  926  cd --
+  927  ls
+  928  cd Practice-Lab
+  929  cd ./linux/TLCL
+  930  #Okay now we are the folder where im' gonna practice terminal coding
+  931  ls ~
+  932  ls ~ ./linux
+  933  pwd
+  934  ls .
+  935  ls ~  . 
+  936  LS ~ . ~/Documentos
+  937  ls ~ . /Documentos
+  938  #Great, we can use ls to print the content of multiple folders. huh
+  939  ls rf ~
+  940  lf -rf ~
+  941  ls -rf ~
+  942  #interesting, i'm trying recursion lets see
+  943  cd ..
+  944  ls .
+  945  ls -rf .
+  946  #huh, it only works on the same level, what if i wanted to go deeper?
+  947  #let's leave that question for later, for now i'm just gonna keep reading
+  948  ls . -l
+  949  #Awesome, this way we can learn more stuff abotu the stuff we are listing and stuff like that i think i'm getting the hang of this stuff
+  950  #Now he is gonna talk about options and argumetns for the commands
+  951  #command -options and arguments
+  952  ls -lt
+  953  ls -lt --reverse
+  954  #oh he game a bunch of options, lets go back
+  955  cd ..
+  956  ls .
+  957  ls . -a
+  958  ls -A
+  959  ls -d
+  960  ls -F
+  961  ls -h
+  962  ls -l
+  963  lf -l -h
+  964  ls -lh
+  965   ls -lr
+  966   ls -ls
+  967   ls-lt
+  968  ls -lt
+  969  #now he is gonna talk about files and whatnot
+  970   ls ./Programas
+  971  cd 'Kof Games'
+  972  cd Kof Games
+  973  cd "Kof Games"
+  974  #DUHHH, what a dumb mistake
+  975  cd Programas
+  976  cd 'Kof Games'
+  977  ls
+  978  cd KOFstation
+  979  ls
+  980  file KOFnes.html
+  981  file kofnes.sh
+  982  file versao.txt
+  983  #Huh, let's try some stuff 
+  984  file -A
+  985  file -a
+  986  #No, it doesn't work as I thought it would, obviously
+  987  ls
+  988  less versao.txt
+  989  #awesome, now i know to  open files and read them in the terminal, i'm pretty sure its gonna prove useful 
+  990  #Hah man, the guys who wrote linux sure have a nice sense of humor haha. the program is called less, because it used to be called more. now it raplaced, you see. less... is more haha. nice pun 
+  991  #now he  is gonna tell me about the file system
+  992  /
+  993  s
+  994  cd /
+  995  ls
+  996  #okay cool
+  997  #oh he said bin contains the binary files the system needs to boot and run
+  998  /bin
+  999  ls
+ 1000  cd /bin
+ 1001  ls
+ 1002  #yeah i dont think i should mess around here lets go back oh shit 
+ 1003  cd -
+ 1004  cd /boot
+ 1005  ls
+ 1006  #yeah i should mess with any off this shit as well
+ 1007  cd -
+ 1008  cd /dev
+ 1009  ls
+ 1010  #everything is a file huh, lsd, video, watchdog, ram, man, there is somuch stuff going on i think im gonna go mad
+ 1011  cd -
+ 1012  cd /ect
+ 1013  cd /etc
+ 1014  ls
+ 1015  #Yeah a ot of stuff going on... who, cron... so this is how it works, interesting
+ 1016  cd -
+ 1017  cd /home
+ 1018  ls
+ 1019  cd -
+ 1020  cd /lib
+ 1021  ls
+ 1022  #okay, things that i have to install and hwatnot, okay
+ 1023  cd -
+ 1024  #okay, i dont really want keep going right now, i think i get it
+ 1025  # lets go back gome
+ 1026  cd /home
+ 1027  #yeah i think i'm gonna just save it now and later commit it. dude i'm really commited to this stuff haha
+ 1028  cd /Practice-Lab
+ 1029  ls
+ 1030  cd /meduardo
+ 1031  cd ./meduardo
+ 1032  cd ./Programas
+ 1033  ls
+ 1034  cd -
+ 1035  ls
+ 1036  cd /Practice-Lab
+ 1037  cd ./Practice-Lab
+ 1038  cd ./linux
+ 1039  cd ./TLCL
+ 1040  history > chpter2~3.txt
