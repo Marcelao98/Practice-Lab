@@ -1,0 +1,1000 @@
+    4  grep -oE '\((U|J|JU)\)' roms.txt | sort | uniq -c
+    5  grep -oE '\([^)]*\)' roms.txt | sort | uniq -c | sort -rn | head -20
+    6  ping -c 20 1.1.1.1
+    7  Running cells with 'Python 3.14.3' requires the ipykernel package.
+    8  <a href='command:jupyter.createPythonEnvAndSelectController'>Create a Python Environment</a> with the required packages.
+    9  Or install 'ipykernel' using the command: '/usr/bin/python -m pip install ipykernel -U --user --force-reinstall'
+   10  /usr/bin/python -m pip install ipykernel -U --user --force-reinstall
+   11  pip install 
+   12  ! sudo dnf swap noopenh264 openh264 --enablerepo=fedora-cisco-openh264
+   13  claude 
+   14  git add -A
+   15  git status
+   16  git commit -m "Added the practice problems for the first chatoer, borign and basic stuff, i know, but hey, a promise is a promise"
+   17  ls
+   18  cd Practice-Lab
+   19  git add -A
+   20  git status
+   21  ls
+   22  cd python
+   23  ls
+   24  cd Crash-Course
+   25  ls
+   26  ls
+   27  cd Practice-Lab
+   28  python3 -m pip --version
+   29  python3 -m venv .venv
+   30  source .venv/bin/activate
+   31  python -m pip install ipykernel jupyter
+   32   source /home/meduardo/Practice-Lab/.venv/bin/activate
+   33  ping -c 10 1.1.1.1
+   34  ping -c 10 google.com
+   35  ip route
+   36  default via 192.168.0.1 dev wlp2s0
+   37  192.168.0.0/24 dev wlp2s0 src 192.168.0.109
+   38  ping c -30 192.168.0.1
+   39  ping -c 30 192.168.0.1
+   40  iw dev wlp2s0 link
+   41  curl -L -o /dev/null -w '\nDNS: %{time_namelookup}s\nConexão: %{time_connect}s\nTempo total: %{time_total}s\nVelocidade média: %{speed_download} bytes/s\nHTTP: %{http_code}\n' 'https://speed.cloudflare.com/__down?bytes=10000000'
+   42  for url in   https://www.google.com/   https://www.youtube.com/   https://www.cloudflare.com/   https://www.wikipedia.org/; do   echo "=== $url ===";   curl -L -o /dev/null -sS     --max-time 15     -w 'DNS: %{time_namelookup}s | TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n'     "$url"; done
+   43  echo "========== 1. SISTEMA =========="
+   44  cat /etc/fedora-release
+   45  uname -r
+   46  echo "Sessão gráfica: $XDG_SESSION_TYPE"
+   47  echo "Ambiente: $XDG_CURRENT_DESKTOP"
+   48  echo
+   49  echo "========== 2. CARGA DO SISTEMA =========="
+   50  uptime
+   51  free -h
+   52  echo
+   53  ps -eo comm,%cpu,%mem --sort=-%cpu | head -n 10
+   54  echo
+   55  echo "========== 3. ARMAZENAMENTO =========="
+   56  df -h /
+   57  echo
+   58  lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS
+   59  echo
+   60  echo "========== 4. WI-FI =========="
+   61  nmcli -f DEVICE,TYPE,STATE,CONNECTION device status
+   62  iw dev wlp2s0 link 2>&1
+   63  echo
+   64  echo "========== 5. DNS =========="
+   65  cat /etc/resolv.conf
+   66  echo
+   67  resolvectl status 2>/dev/null | head -n 45
+   68  echo
+   69  echo "========== 6. SERVIÇOS DE REDE =========="
+   70  systemctl is-active NetworkManager
+   71  systemctl is-active systemd-resolved
+   72  echo
+   73  echo "========== 7. ERROS RECENTES DO SISTEMA =========="
+   74  journalctl -p err -b --no-pager -n 20 2>/dev/null
+   75  time resolvectl query www.cloudflare.com
+   76  time resolvectl query www.youtube.com
+   77  time resolvectl query www.wikipedia.org
+   78  watch -n 2 'iw dev wlp2s0 link'
+   79  ping -c 30 192.168.0.1
+   80  ping -c 30 1.1.1.1
+   81  ]echo "========== GOOGLE IPV4 =========="
+   82  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+   83  echo
+   84  echo "========== YOUTUBE IPV4 =========="
+   85  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+   86  echo
+   87  echo "========== YOUTUBE IPV6 =========="
+   88  curl -6 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+   89  444
+   90  echo "========== GOOGLE IPV4 =========="
+   91  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+   92  echo
+   93  echo "========== YOUTUBE IPV4 =========="
+   94  curl -4 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+   95  echo
+   96  echo "========== YOUTUBE IPV6 =========="
+   97  curl -6 -L -o /dev/null -sS --max-time 15 -w 'TCP: %{time_connect}s | TLS: %{time_appconnect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+   98  ls
+   99  rm Chapter1.ipynb
+  100  ls
+  101  mv Chapter2iynb ./Documentos
+  102  mv Chapter2.ipynb Practice-Lab
+  103  ls
+  104  cd Practice-lab
+  105  ls
+  106  cd Practice-Lab
+  107  ls
+  108  mv Chapter2.ipynb python
+  109  cd python
+  110  ls
+  111  mv Chapter2.ipynb Crash-Course
+  112  ls
+  113  Crash-Course
+  114  cd Crash-Course
+  115  ls
+  116  cd ..
+  117  cd -
+  118   cd ...
+  119  cd ..
+  120   cd .
+  121   cd ..
+  122  git add -A
+  123  git commit -m "Added Chapter 2, yeah it is really boring and easy stuff, i know, its just to build some discipline"
+  124   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  125  cd
+  126  ls
+  127  cd Practice-Lab
+  128  #Okay here is the deal, i'm reading along the book and practicing stuff okay.
+  129  ls
+  130   ls /python
+  131  ls
+  132  #I'm just reading along TLTL (the linux terminal line, almost looks tile tldl haha, but its l oong and i'm gonna read the whole thing)
+  133  ls
+  134  ls ./python
+  135  ls ./python/Crash-Course
+  136  ls
+  137  ls ./linux/TLDL
+  138  ls ./linux
+  139  #Haha, ima de a typo in my brain, it's the Linux Command Line, not terminal line. DUh
+  140  ls ./linux/TLCL
+  141  #since chapter 2 is so short, i'm gonna make a txt for chapters 2 and 3 together
+  142  #cd is for going up and down and movign through the folders, sueful stuff, ls is for lsitign the stuff in the foulder
+  143  cd python
+  144  cd Crash-Course
+  145  cd -
+  146  cd --
+  147  ls
+  148  cd Practice-Lab
+  149  cd ./linux/TLCL
+  150  #Okay now we are the folder where im' gonna practice terminal coding
+  151  ls ~
+  152  ls ~ ./linux
+  153  pwd
+  154  ls .
+  155  ls ~  . 
+  156  LS ~ . ~/Documentos
+  157  ls ~ . /Documentos
+  158  #Great, we can use ls to print the content of multiple folders. huh
+  159  ls rf ~
+  160  lf -rf ~
+  161  ls -rf ~
+  162  #interesting, i'm trying recursion lets see
+  163  cd ..
+  164  ls .
+  165  ls -rf .
+  166  #huh, it only works on the same level, what if i wanted to go deeper?
+  167  #let's leave that question for later, for now i'm just gonna keep reading
+  168  ls . -l
+  169  #Awesome, this way we can learn more stuff abotu the stuff we are listing and stuff like that i think i'm getting the hang of this stuff
+  170  #Now he is gonna talk about options and argumetns for the commands
+  171  #command -options and arguments
+  172  ls -lt
+  173  ls -lt --reverse
+  174  #oh he game a bunch of options, lets go back
+  175  cd ..
+  176  ls .
+  177  ls . -a
+  178  ls -A
+  179  ls -d
+  180  ls -F
+  181  ls -h
+  182  ls -l
+  183  lf -l -h
+  184  ls -lh
+  185   ls -lr
+  186   ls -ls
+  187   ls-lt
+  188  ls -lt
+  189  #now he is gonna talk about files and whatnot
+  190   ls ./Programas
+  191  cd 'Kof Games'
+  192  cd Kof Games
+  193  cd "Kof Games"
+  194  #DUHHH, what a dumb mistake
+  195  cd Programas
+  196  cd 'Kof Games'
+  197  ls
+  198  cd KOFstation
+  199  ls
+  200  file KOFnes.html
+  201  file kofnes.sh
+  202  file versao.txt
+  203  #Huh, let's try some stuff 
+  204  file -A
+  205  file -a
+  206  #No, it doesn't work as I thought it would, obviously
+  207  ls
+  208  less versao.txt
+  209  #awesome, now i know to  open files and read them in the terminal, i'm pretty sure its gonna prove useful 
+  210  #Hah man, the guys who wrote linux sure have a nice sense of humor haha. the program is called less, because it used to be called more. now it raplaced, you see. less... is more haha. nice pun 
+  211  #now he  is gonna tell me about the file system
+  212  /
+  213  s
+  214  cd /
+  215  ls
+  216  #okay cool
+  217  #oh he said bin contains the binary files the system needs to boot and run
+  218  /bin
+  219  ls
+  220  cd /bin
+  221  ls
+  222  #yeah i dont think i should mess around here lets go back oh shit 
+  223  cd -
+  224  cd /boot
+  225  ls
+  226  #yeah i should mess with any off this shit as well
+  227  cd -
+  228  cd /dev
+  229  ls
+  230  #everything is a file huh, lsd, video, watchdog, ram, man, there is somuch stuff going on i think im gonna go mad
+  231  cd -
+  232  cd /ect
+  233  cd /etc
+  234  ls
+  235  #Yeah a ot of stuff going on... who, cron... so this is how it works, interesting
+  236  cd -
+  237  cd /home
+  238  ls
+  239  cd -
+  240  cd /lib
+  241  ls
+  242  #okay, things that i have to install and hwatnot, okay
+  243  cd -
+  244  #okay, i dont really want keep going right now, i think i get it
+  245  # lets go back gome
+  246  cd /home
+  247  #yeah i think i'm gonna just save it now and later commit it. dude i'm really commited to this stuff haha
+  248  cd /Practice-Lab
+  249  ls
+  250  cd /meduardo
+  251  cd ./meduardo
+  252  cd ./Programas
+  253  ls
+  254  cd -
+  255  ls
+  256  cd /Practice-Lab
+  257  cd ./Practice-Lab
+  258  cd ./linux
+  259  cd ./TLCL
+  260  history > chpter2~3.txt
+  261  ls
+  262  cd ..
+  263  git add -A 
+  264  git commit -m "Added notes and pratice for chapter 2 and 3 of TLCL"
+  265  echo "===== GOOGLE ====="
+  266  curl -4 -L -o /dev/null -sS --max-time 15 -w 'Conexão: %{time_connect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+  267  echo
+  268  echo "===== YOUTUBE ====="
+  269  curl -4 -L -o /dev/null -sS --max-time 15 -w 'Conexão: %{time_connect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+  270   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  271  claude code
+  272  cd ~/caminho/Project-VATAE
+  273  git status
+  274  git log --oneline @{u}..HEAD      # se listar commits, rode: git push
+  275  git add -a 
+  276  git add -A
+  277  git commit -m "Added a Linux version"
+  278  git push
+  279  d
+  280  git push
+  281  sudo dnf install gh
+  282  gh auth login          # GitHub.com → HTTPS → Yes → Login with a web browser
+  283  gh auth setup-git      # garante que o Git use o gh (normalmente o login já faz isso)
+  284  git push origin main
+  285  git push origin main
+  286  git fetch origin
+  287  git checkout main
+  288  git pull origin main
+  289  git merge --ff-only origin/linux
+  290  git merge --no-edit origin/perfil-app
+  291  git merge --no-edit origin/secretario
+  292  sed -i '/^<<<<<<< /d;/^=======$/d;/^>>>>>>> /d' docs/testes-reais.md
+  293  git add docs/testes-reais.md
+  294  git commit --no-edit
+  295  git merge --no-edit origin/vatty-evolucao
+  296  git merge --no-edit linux
+  297  source .venv/bin/activate
+  298  python -m unittest discover -s tests
+  299  git push origin main linux
+  300  cd Programas
+  301  cd ~/Downloads
+  302  sudo dnf install ./Freddy-0.1.0-1.x86_64.rpm
+  303  find ~ -name "Freddy-0.1.0*.rpm" 2>/dev/null
+  304  ls
+  305  cd Programas
+  306  git clone https://github.com/Marcelao98/Projeto-Frederico.git
+  307  cd Projeto-Frederico
+  308  git checkout claude/busy-clarke-i0agsb
+  309  cd frontend
+  310  npm install
+  311  npm run app
+  312  sudo apt install ./Freddy_0.1.0_amd64.deb
+  313  cd ..
+  314  sudo apt install ./Freddy_0.1.0_amd64.deb
+  315  cd ~/Programas/Project-VATAE
+  316  git checkout main
+  317  git pull origin ccr-883f2a0c-0pd5sv
+  318  git push origin main
+  319  claude
+  320  cd Downloads
+  321  cd ~/Downloads
+  322  sudo dnf install ./Freddy-0.1.0-1.x86_64.rpm
+  323  ls
+  324  cd Programas
+  325  ls
+  326  cd Project-VATAE
+  327  git checkout main
+  328  git pull origin ccr-883f2a0c-0pd5sv
+  329  git push origin main
+  330  claude
+  331  sudo dnf install -y ffmpeg-free portaudio git && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python -m freddy
+  332  sudo dnf install -y gh git ffmpeg-free portaudio && (gh auth status >/dev/null 2>&1 || gh auth login) && { [ -d ~/Projeto-Frederico ] || gh repo clone Marcelao98/Projeto-Freder
+  333  sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  334  [200~sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy~
+  335  sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  336  sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  337  cd ~/Downloads && tar xzf KOFstation-linux-M1.tar.gz && ./KOFstation-linux/kofstation
+  338  [200~sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.3.0/Freddy-0.3.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy~
+  339  sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.3.0/Freddy-0.3.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  340  claude code
+  341  claude code
+  342  D="$HOME/Programas/Kof Games/KOFstation"; if [ -d "$D" ] && [ -n "$(ls -A "$D" | grep -vx kofstation)" ]; then echo "Já tem outras coisas em $D. Não mexi em nada:"; ls -A "$D"; else mkdir -p "$D" && curl -fL -o "$D/kofstation" https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x "$D/kofstation" && echo "Instalado: $D/kofstation" && "$D/kofstation"; fi
+  343  cd Documentos
+  344  ls
+  345  cd Livros
+  346  ls
+  347  cd Humanidades
+  348  ls
+  349  cd Filosofia
+  350  wget -c -t 5 "https://sanderlei.com.br/PDF/Albert-Camus/Albert-Camus-O-Mito-de-Sisifo.pdf" -O O-Mito-de-Sisifo.pdf
+  351  sudo dnf install -y opus https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.5.0/Freddy-0.5.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  352  python3 - <<'PY'
+  353  from pathlib import Path
+  354  import re
+  355  import unicodedata
+  356  root = Path("/home/meduardo/Programas/Kof Games/Games/snes")
+  357  patterns = [
+  358      r'\(Japan\)', r'\(J\)', r'\[Japan\]', r'\[J\]',
+  359      r'NTSC-J', r'\(Japanese\)', r'\[Japanese\]'
+  360  ]
+  361  japanese_chars = re.compile(
+  362      r'[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]'
+  363  )
+  364  suspects = []
+  365  files = [
+  366      p for p in root.rglob("*")
+  367      if p.is_file() and p.suffix.lower() in
+  368      {".sfc", ".smc", ".fig", ".swc", ".zip", ".7z", ".rar"}
+  369  ]
+  370  for p in files:
+  371      name = p.name
+  372      reasons = []
+  373      for pattern in patterns:
+  374          if re.search(pattern, name, re.IGNORECASE):
+  375              reasons.append("TAG JAPONESA")
+  376              break
+  377      if japanese_chars.search(name):
+  378          reasons.append("CARACTERES JAPONESES")
+  379      if reasons:
+  380          suspects.append((p, ", ".join(reasons)))
+  381  report = Path.home() / "Documentos" / "SNES_suspeitos_japones.txt"
+  382  report.parent.mkdir(parents=True, exist_ok=True)
+  383  with report.open("w", encoding="utf-8") as f:
+  384      f.write(f"Arquivos analisados: {len(files)}\n")
+  385      f.write(f"Suspeitos: {len(suspects)}\n\n")
+  386      for p, reason in suspects:
+  387          f.write(f"{reason}\n{p}\n\n")
+  388  print(f"\nArquivos analisados: {len(files)}")
+  389  print(f"Suspeitos japoneses: {len(suspects)}")
+  390  print(f"Relatório: {report}")
+  391  print("\nNenhum arquivo foi alterado.")
+  392  PY
+  393  cat > ~/snes_curator.py <<'PY'
+  394  import re
+  395  import csv
+  396  import unicodedata
+  397  from pathlib import Path
+  398  from datetime import datetime
+  399  from difflib import SequenceMatcher
+  400  ROM_DIR = Path("/home/meduardo/Programas/Kof Games/Games/snes")
+  401  REPORT_DIR = Path.home() / "Documentos"
+  402  EXTENSIONS = {".sfc", ".smc", ".fig", ".swc", ".078", ".bs", ".zip", ".7z", ".rar"}
+  403  GAMES = {
+  404      "RPG": [
+  405          "Chrono Trigger", "Final Fantasy III", "Final Fantasy II",
+  406          "Final Fantasy V", "Super Mario RPG", "EarthBound",
+  407          "Secret of Mana", "Secret of Evermore", "Terranigma",
+  408          "Illusion of Gaia", "Soul Blazer", "Breath of Fire",
+  409          "Breath of Fire II", "Lufia and the Fortress of Doom",
+  410          "Lufia II Rise of the Sinistrals", "The 7th Saga",
+  411          "Robotrek", "Shadowrun", "Ogre Battle The March of the Black Queen",
+  412          "Uncharted Waters New Horizons", "Dragon View", "Paladins Quest",
+  413          "Brain Lord", "The Legend of the Mystical Ninja", "Harvest Moon",
+  414          "Star Ocean", "Tales of Phantasia", "Live A Live",
+  415          "Romancing SaGa 3", "Final Fantasy IV", "Final Fantasy VI",
+  416          "Dragon Quest V", "Dragon Quest VI", "Bahamut Lagoon",
+  417          "Fire Emblem Genealogy of the Holy War", "Fire Emblem Thracia 776",
+  418          "Super Ninja Boy", "Arcana", "Dungeon Master",
+  419          "The Twisted Tales of Spike McFang", "The Secret of the Stars",
+  420          "Inindo Way of the Ninja", "Lagoon", "The Lord of the Rings",
+  421          "The Wizard of Oz", "Equinox", "Mystic Ark",
+  422          "The Adventures of Hourai High", "Dark Half", "G.O.D."
+  423      ],
+  424      "Plataforma e Ação": [
+  425          "Super Mario World", "Super Mario World 2 Yoshis Island",
+  426          "Donkey Kong Country", "Donkey Kong Country 2",
+  427          "Donkey Kong Country 3", "Super Metroid", "Mega Man X",
+  428          "Mega Man X2", "Mega Man X3", "Mega Man 7",
+  429          "Mega Man and Bass", "Castlevania Dracula X",
+  430          "Super Castlevania IV", "Contra III The Alien Wars",
+  431          "Super Ghouls and Ghosts", "ActRaiser", "ActRaiser 2",
+  432          "Demons Crest", "UN Squadron", "Sunset Riders",
+  433          "Wild Guns", "The Ninja Warriors", "Pocky and Rocky",
+  434          "Pocky and Rocky 2", "The Great Circus Mystery",
+  435          "Goof Troop", "Disneys Aladdin", "The Lion King",
+  436          "Taz Mania", "Aero the Acro Bat", "Aero the Acro Bat 2",
+  437          "Sparkster", "Ristar", "B.O.B.", "Earthworm Jim",
+  438          "Earthworm Jim 2", "Plok", "Kirbys Dream Land 3",
+  439          "Kirby Super Star", "Super Adventure Island II",
+  440          "Super Adventure Island", "Joe and Mac", "Joe and Mac 2",
+  441          "Prehistorik Man", "Zombies Ate My Neighbors",
+  442          "The Firemen", "Super Bonk", "Hagane",
+  443          "Rendering Ranger R2", "Gon"
+  444      ],
+  445      "Beat'em up": [
+  446          "Final Fight", "Final Fight 2", "Final Fight 3",
+  447          "The King of Dragons", "Knights of the Round",
+  448          "Captain Commando", "Battletoads in Battlemaniacs",
+  449          "Turtles in Time", "Mighty Morphin Power Rangers",
+  450          "Mighty Morphin Power Rangers The Movie", "Batman Returns",
+  451          "The Peace Keepers", "Rival Turf", "Brawl Brothers",
+  452          "Biker Mice from Mars", "Undercover Cops",
+  453          "Ghost Chaser Densei", "Sonic Blast Man",
+  454          "Sonic Blast Man II", "Rushing Beat", "Rushing Beat Ran",
+  455          "Rushing Beat Shura", "The Combatribes", "Super Double Dragon",
+  456          "Double Dragon V", "Iron Commando", "Legend",
+  457          "Ninja Warriors Again", "Power Rangers Fighting Edition",
+  458          "Godzilla Kaijuu Daikessen", "Kamen Rider",
+  459          "Battle Tycoon", "Ranma 1/2 Hard Battle", "WeaponLord",
+  460          "Killer Instinct", "Street Fighter II Turbo",
+  461          "Super Street Fighter II", "Mortal Kombat II",
+  462          "Mortal Kombat III", "Ultimate Mortal Kombat 3",
+  463          "Fatal Fury Special", "Art of Fighting", "Samurai Shodown",
+  464          "World Heroes 2", "TMNT Tournament Fighters",
+  465          "ClayFighter", "ClayFighter 2", "Battletoads Double Dragon",
+  466          "Super Smash TV"
+  467      ],
+  468      "Shooters": [
+  469          "Gradius III", "R-Type III", "Super R-Type", "Axelay",
+  470          "UN Squadron", "Space Megaforce", "Darius Twin",
+  471          "Darius Force", "Parodius", "Gokujou Parodius",
+  472          "Popn TwinBee", "Strike Gunner STG", "Area 88",
+  473          "Super Aleste", "Raiden Trad", "Firepower 2000",
+  474          "Earth Defense Force", "Macross Scrambled Valkyrie",
+  475          "Jikkyou Oshaberi Parodius", "Cotton 100%",
+  476          "Sonic Wings", "Aero Fighters", "BioMetal", "D-Force",
+  477          "Super Nova", "Imperium", "Kiki KaiKai", "Sutte Hakkun",
+  478          "BlaZeon", "Choplifter III", "Buster Bros",
+  479          "Super Smash TV", "Total Carnage", "Wild Guns",
+  480          "Operation Logic Bomb", "Star Fox", "Star Fox 2",
+  481          "Doom", "Wolfenstein 3D", "Battle Clash", "Metal Combat",
+  482          "Space Invaders", "Super Earth Defense Force",
+  483          "The Firemen", "Phalanx", "U.N. Squadron",
+  484          "Robo Aleste", "Super Nova", "Cybernator",
+  485          "Super Turrican"
+  486      ]
+  487  }
+  488  ALIASES = {
+  489      "Final Fantasy III": ["Final Fantasy VI"],
+  490      "Final Fantasy II": ["Final Fantasy IV"],
+  491      "The Legend of the Mystical Ninja": ["Ganbare Goemon"],
+  492      "UN Squadron": ["Area 88"],
+  493      "The Great Circus Mystery": ["Mickey Magical Adventure 3"],
+  494      "The Ninja Warriors": ["Ninja Warriors Again"],
+  495      "Mega Man and Bass": ["Rockman and Forte"],
+  496      "Super Adventure Island II": ["Takahashi Meijin no Daibouken Jima 2"]
+  497  }
+  498  def normalize(name):
+  499      name = unicodedata.normalize("NFKD", name)
+  500      name = "".join(c for c in name if not unicodedata.combining(c))
+  501      name = name.lower()
+  502      name = re.sub(r"\([^)]*\)|\[[^]]*\]|\{[^}]*\}", " ", name)
+  503      name = re.sub(
+  504          r"\b(usa|europe|japan|world|rev\s*\d*|"
+  505          r"version\s*\d*|u|e|j|en|br|pt-br|good|bad)\b",
+  506          " ", name
+  507      )
+  508      return re.sub(r"[^a-z0-9]", "", name)
+  509  def find_matches(game, files):
+  510      variants = [game] + ALIASES.get(game, [])
+  511      matches = []
+  512      for file in files:
+  513          filename = normalize(file.stem)
+  514          for variant in variants:
+  515              target = normalize(variant)
+  516              score = SequenceMatcher(None, filename, target).ratio()
+  517              if filename == target:
+  518                  score = 1.0
+  519              elif len(target) >= 7 and target in filename:
+  520                  score = max(score, 0.94)
+  521              if score >= 0.86:
+  522                  matches.append((score, file))
+  523                  break
+  524      return sorted(matches, key=lambda x: x[0], reverse=True)
+  525  def main():
+  526      if not ROM_DIR.is_dir():
+  527          print(f"ERRO: pasta não encontrada: {ROM_DIR}")
+  528          return
+  529      REPORT_DIR.mkdir(parents=True, exist_ok=True)
+  530      files = [
+  531          p for p in ROM_DIR.rglob("*")
+  532          if p.is_file() and p.suffix.lower() in EXTENSIONS
+  533      ]
+  534      print(f"\nROMs encontradas: {len(files)}")
+  535      print("Analisando catálogo SNES...\n")
+  536      results = []
+  537      found_total = 0
+  538      missing_total = 0
+  539      for category, games in GAMES.items():
+  540          print(f"\n===== {category} =====")
+  541          for game in games:
+  542              matches = find_matches(game, files)
+  543              if matches:
+  544                  found_total += 1
+  545                  status = "ENCONTRADO"
+  546                  filename = matches[0][1].name
+  547                  print(f"[OK] {game} -> {filename}")
+  548                  if len(matches) > 1:
+  549                      print(f"     Atenção: {len(matches)} correspondências possíveis")
+  550              else:
+  551                  missing_total += 1
+  552                  status = "FALTANDO"
+  553                  filename = ""
+  554                  print(f"[FALTA] {game}")
+  555              results.append({
+  556                  "Categoria": category,
+  557                  "Jogo": game,
+  558                  "Status": status,
+  559                  "Arquivo": filename,
+  560                  "Correspondencias": len(matches)
+  561              })
+  562      total = len(results)
+  563      coverage = found_total / total * 100 if total else 0
+  564      timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+  565      txt_path = REPORT_DIR / f"SNES_Curadoria_{timestamp}.txt"
+  566      csv_path = REPORT_DIR / f"SNES_Curadoria_{timestamp}.csv"
+  567      with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
+  568          writer = csv.DictWriter(f, fieldnames=results[0].keys())
+  569          writer.writeheader()
+  570          writer.writerows(results)
+  571      with open(txt_path, "w", encoding="utf-8") as f:
+  572          f.write("RELATORIO DE CURADORIA SNES\n")
+  573          f.write("=" * 45 + "\n")
+  574          f.write(f"Pasta: {ROM_DIR}\n")
+  575          f.write(f"Arquivos analisados: {len(files)}\n")
+  576          f.write(f"Jogos no catálogo: {total}\n")
+  577          f.write(f"Encontrados: {found_total}\n")
+  578          f.write(f"Faltantes: {missing_total}\n")
+  579          f.write(f"Cobertura: {coverage:.1f}%\n")
+  580          for category in GAMES:
+  581              f.write(f"\n\n### {category}\n")
+  582              for r in results:
+  583                  if r["Categoria"] == category:
+  584                      f.write(
+  585                          f"[{'OK' if r['Status'] == 'ENCONTRADO' else 'FALTA'}] "
+  586                          f"{r['Jogo']}"
+  587                      )
+  588                      if r["Arquivo"]:
+  589                          f.write(f" -> {r['Arquivo']}")
+  590                      f.write("\n")
+  591      print("\n" + "=" * 45)
+  592      print("RESUMO")
+  593      print("=" * 45)
+  594      print(f"Catálogo:    {total}")
+  595      print(f"Encontrados: {found_total}")
+  596      print(f"Faltantes:   {missing_total}")
+  597      print(f"Cobertura:   {coverage:.1f}%")
+  598      print(f"\nRelatórios salvos em:\n{txt_path}\n{csv_path}")
+  599      print("\nNenhuma ROM foi modificada.")
+  600  if __name__ == "__main__":
+  601      main()
+  602  PY
+  603  python3 ~/snes_curator.py
+  604  claude code
+  605  claude code 
+  606  Claude code
+  607  claude code
+  608  claude
+  609  claude
+  610  claude, APENAS FAÇA A TELA IR DO NOTEBOOK APRA A TV QUE ESTÁ COECTADA, RODE O COMANDO DIRETO. CERTO
+  611  CLAUDE
+  612  claude
+  613  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  614  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  615  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  616  cd Programas
+  617  ls
+  618  cd KOFLibrary
+  619  claude
+  620   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  621  ls
+  622  mv Chapter3.ipynb Practice-lab
+  623  cd Practice-Lab
+  624  mv Chapter3.ipynb Linux
+  625  ls
+  626  mv Chapter3.ipynb Linux
+  627  ls
+  628  cd --
+  629  ls
+  630  cd Practice
+  631  rm Practice
+  632  ls
+  633  cd Practice-lab
+  634  find Chapter3.ipynb
+  635  ls
+  636  cd Practice-Lab
+  637  ls
+  638  cd linux
+  639  ls
+  640  cd --
+  641  cd Practice-Lab
+  642  ls
+  643  cd linux
+  644  ls
+  645  cd ..
+  646  ls
+  647  cd python
+  648  ls
+  649  cd Crash-Course
+  650  pwg
+  651  pwd
+  652  #Alright now we are gonna move into chapter 4 of the Linux command line, right.
+  653  # he is gonna introduce us to the cp, mv mkdir, rm and ln commands
+  654  #cp commands copies files, okay
+  655  #mv move and renames files and directories
+  656  #mkdir creates directories
+  657  #rm removes files and directories.
+  658  #and lastly, ln create hard and symbolic links. great, I dunno what that means, lets keep reading
+  659  # he is gonna talk now about wildcards, huh that is fun, i guess i understand what htey are from excele, but lets keep reading
+  660  ls
+  661  cd Downloads
+  662  ls
+  663  #Let's try something 
+  664  ls
+  665  cd --
+  666  cd Programas
+  667  ls
+  668  cd Kof Games
+  669  cd 'Kof Games'
+  670  ls
+  671  cd Games
+  672  cd snes
+  673  pwd
+  674  cd .
+  675   cd ~
+  676  ls
+  677  rm snes_curator.py
+  678  cd Downloads
+  679  ls
+  680  #Guess what, all those zip are snes files, so...
+  681  mv *.zip /home/meduardo/Programas/Kof Games/Games/snes
+  682  #okay, i just forgot the damn space key haha
+  683  mv *.zip "/home/meduardo/Programas/Kof Games/Games/snes/"
+  684  ls
+  685  awesome, oh hey this command line stuff is actually pretty useful huh. 
+  686  rm *.jpg
+  687  ls
+  688  rm *.png
+  689  #okay I didn't really need thos anymore, lets keep reading 
+  690  ls
+  691  rm *.kofsave
+  692  ls
+  693  #Awesome
+  694  ls
+  695  cd --
+  696  cd
+  697  ls
+  698  cp -r Programas Files
+  699  ls
+  700  cd FIles
+  701  cd Files
+  702  ls
+  703  c -
+  704  down
+  705  up
+  706  cd --
+  707  rm Files
+  708  #okay to remove a directory i need recursion, makes sense huh
+  709  rm -r Files
+  710  rm -rf Files
+  711  ls
+  712  #Okay awesome now let's learn about the ln linking stuff
+  713  ln -s item link
+  714  #oh i t think i get it 
+  715  cd
+  716  ls
+  717  rm link
+  718  cd
+  719  ls
+  720  ln -s roms.txt jogos
+  721  ls
+  722  #hmm not quite
+  723  rm *.txt
+  724  ls
+  725  #okay os now its lie a pointer and it has no refernece anymore, i get it.
+  726  rm jogos
+  727  ls
+  728  cd Programas
+  729  pwd
+  730  cd --
+  731  MV Projeto-Frederico /home/meduardo/Programas
+  732  mv Projeto-Frederico /home/meduardo/Programas
+  733  cd Projeto-Frederico
+  734  ls
+  735  cd --
+  736  mv -rf Projeto-Frederico /home/meduardo/Programas
+  737  mv --help
+  738  ls
+  739  cd Projeto-Frederico /home/meduardo/Programas
+  740  mv Projeto-Frederico /home/meduardo/Programas
+  741  rm Projeto-Frederico
+  742  rm -r Projeto-Frederico
+  743  rm -rf Projeto-Frederico
+  744  #okay let's build a playground, it makes sense for it to, be, well.... in hte Practice-Lab. so
+  745  cd Practice-Lab
+  746  cd linux
+  747  mkdir Playground
+  748  # let's make some more directories 
+  749  mkdir dir1 dir2 dir3
+  750  nano whatever.txt
+  751  ls
+  752  cd ./Playground
+  753  cd -
+  754  rm dir1 dir2 dir3
+  755  rm -rf dir1 dir2 dir3
+  756  ls
+  757  mv whatever.txt ./Playground
+  758  ls
+  759  cd Playground
+  760  ls
+  761  mkdir dir1 dir2 dir3
+  762  ls
+  763  cp whatever.txt dir1
+  764  rm whatever.txt
+  765  cd dir1
+  766  ls
+  767  pwd
+  768  mv whatever.txt [200~/home/meduardo/Practice-Lab/linux/Playground/dir1
+  769  ~
+  770  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir1
+  771  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  772  ls
+  773  cd /home/meduardo/Practice-Lab/linux/Playground/dir2
+  774  ls
+  775  mv /home/meduardo/Practice-Lab/linux/Playground/dir3
+  776  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir3
+  777  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  778  ls
+  779  cd /home/meduardo/Practice-Lab/linux/Playground/dir3
+  780  ls
+  781  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2 /home/meduardo/Practice-Lab/linux/Playground/dir1
+  782  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  783  cp /home/meduardo/Practice-Lab/linux/Playground/dir1
+  784  cp whatever.txt. /home/meduardo/Practice-Lab/linux/Playground/dir1
+  785  ls
+  786  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  787  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir1
+  788  ls
+  789  cd --
+  790  cd /home/meduardo/Practice-Lab/linux/Playground/dir1
+  791  cd -
+  792  ls
+  793  /home/meduardo/Practice-Lab/linux/Playground/dir1
+  794  cd /home/meduardo/Practice-Lab/linux/Playground/dir1
+  795  cd ..
+  796  ls
+  797  ls 
+  798  ls -rf
+  799  ls -help
+  800  ls -- help
+  801  ls --help
+  802  ls -R
+  803  #Great so now that is the way huh
+  804  cd dir1
+  805  mv whatever.txt anything.txt
+  806  cd ..
+  807  cd dir2
+  808  ls
+  809  mv whatever.txt randombullshit.txt
+  810  ln mess randombullshit.txt
+  811  ls
+  812  ls mess randombullshit.txt
+  813  ln mess randombullshit.txt
+  814  ls
+  815  ln randombullshit.txt random
+  816  cd ..
+  817  cd dir1
+  818  ls
+  819  ls anything.txt random
+  820  ln anything.txt random
+  821  cd ..
+  822  ls
+  823  cd dir3
+  824  ls
+  825  rn whatever.txt random
+  826  ln anything.txt random
+  827  ln whatever.txt random
+  828  ls
+  829   #okay man time to go to sleep and save this mess 
+  830  cd ..
+  831  cd TLCL
+  832  ls
+  833  history > chapter4.txt
+  834  ls
+  835  cd..
+  836  cd ..
+  837  git add -A
+  838  git commit -M "Practiced chapter 4 of the Linux Command Line, now i'm gonna go sleep and then practice some more later"
+  839  git commit -m "Read chapter 4 of the linux command line, saved the madness in a txt file for chapter 4, and created a playground folder isnide it. Later I think i'm gonna move this playground folder to the basi of Practice-Lab"
+  840  git diff
+  841  git log
+  842  ls
+  843  cd Pracctice-Lab
+  844  cd Practice-Lab
+  845  git add -A
+  846  git commit -m "Added Chapter 3 for Python Crash Course"
+  847  ls
+  848  cd Programas
+  849  ls
+  850  cd 'Kof Games'
+  851  claude
+  852  claude, vai na pasta downlaod, e passsa os livros que estão lá para o loal certo. depois e u faço um script para isso
+  853  claude
+  854  claude
+  855  ls
+  856  mv CHapter4.ipynb Practice-lab/python
+  857  mv Chapter4.ipynb Practice-Lab
+  858  cd Practice-Lab
+  859  ls
+  860  mv Chapter4.ipynb python
+  861  cd python
+  862  ls
+  863  mv Chapter4.ipynb Crash-Course
+  864  cd ..
+  865  git add -a
+  866  git add -A
+  867  git commit -m "Added a notebook for chapter 4 of crash course. Oh man this is really really boring me to death"
+  868   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  869  sd
+  870  damn this is cool hahahaha
+  871  yay -S kwin-effects-better-blur-dx
+  872  [200~sudo dnf -y install git cmake extra-cmake-modules gcc-g++ kf6-kwindowsystem-devel plasma-workspace-devel libplasma-devel qt6-qtbase-private-devel qt6-qtbase-devel cmake kwin-devel extra-cmake-modules kwin-devel kf6-knotifications-devel kf6-kio-devel kf6-kcrash-devel kf6-ki18n-devel kf6-kguiaddons-devel libepoxy-devel kf6-kglobalaccel-devel kf6-kcmutils-devel kf6-kconfigwidgets-devel kf6-kdeclarative-devel kdecoration-devel kf6-kglobalaccel kf6-kdeclarative libplasma kf6-kio qt6-qtbase kf6-kguiaddons kf6-ki18n wayland-devel libdrm-devel~
+  873  sudo dnf -y install git cmake extra-cmake-modules gcc-g++ kf6-kwindowsystem-devel plasma-workspace-devel libplasma-devel qt6-qtbase-private-devel qt6-qtbase-devel cmake kwin-devel extra-cmake-modules kwin-devel kf6-knotifications-devel kf6-kio-devel kf6-kcrash-devel kf6-ki18n-devel kf6-kguiaddons-devel libepoxy-devel kf6-kglobalaccel-devel kf6-kcmutils-devel kf6-kconfigwidgets-devel kf6-kdeclarative-devel kdecoration-devel kf6-kglobalaccel kf6-kdeclarative libplasma kf6-kio qt6-qtbase kf6-kguiaddons kf6-ki18n wayland-devel libdrm-devel
+  874  plasmashell --version
+  875  echo $XDG_SESSION_TYPE
+  876  plasmashell --version
+  877  echo $XDG_SESSION_TYcat /etc/fedora-release
+  878  rpm -q kwin
+  879  cat /etc/fedora-release
+  880  rpm -q kwin
+  881  sudo dnf copr enable infinality/kwin-effects-better-blur-dx
+  882  sudo dnf install kwin-effects-better-blur-dx
+  883  rpm -q kmime kf6-kmime
+  884  dnf list --installed '*kmime*'
+  885  dnf repolist --enabled
+  886  sudo dnf upgrade --refresh
+  887  sudo dnf install git cmake extra-cmake-modules gettext
+  888  git clone https://github.com/paulmcauley/klassy
+  889  cd klassy
+  890  git checkout plasma6.6
+  891  ./install.sh
+  892  sudo dnf install kwin-effects-better-blur-dx
+  893  THIS LOOK SO COOL HAHAHAH 
+  894  sudo reboot
+  895  THIS LOOKS SO GOOD 
+  896  kwin_wayland --replace
+  897  sudo dnf install git cmake extra-cmake-modules gettext
+  898  sudo dnf install "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)" "cmake(KF5GuiAddons)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(KF5KCMUtils)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration3)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)"
+  899  git clone https://github.com/paulmcauley/klassy
+  900  cd klassy
+  901  git checkout plasma6.6
+  902  ./install.sh
+  903  cd ..
+  904  cd klassy
+  905  git checkout plasma6.6
+  906  ./install.sh
+  907  sudo dnf install pipx git gcc python3-devel dbus-glib-devel glib2-devel extra-cmake-modules
+  908  pipx ensurepath
+  909  pipx install kde-material-you-colors
+  910  pipx inject kde-material-you-colors pywal16
+  911  as
+  912  rm -f ~/.config/plasmashellrc && systemctl --user restart plasma-plasmashell
+  913  systemctl --user stop xwaylandvideobridge && systemctl --user mask xwaylandvideobridge && killall -9 xwaylandvideobridge
+  914  [200~pkill -9 -f xwaylandvideobridge~
+  915  pkill -9 -f xwaylandvideobridge
+  916  rm -f ~/.config/autostart/*xwaylandvideobridge* ~/.local/share/applications/*xwaylandvideobridge*
+  917  pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop
+  918  sudo apt install latte-dock      # Ubuntu/Debian/KDE Neon
+  919  sudo pacman -S latte-dock        # Arch/Manjaro
+  920   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  921  ls
+  922  cd Programas
+  923  ls
+  924  cd ..
+  925  cd Practice-Lab
+  926  ls
+  927  cd python
+  928  ls
+  929  cd Crash-Course
+  930  ..
+  931  ls
+  932  cd ..
+  933  git add -A
+  934  got commit -m "Added a bunch of exercises for chapter 5. these first few chapters are a fucking slog haha, not gonna finish it today. Later I'm gonna try and tackle a mor challenging book"
+  935  git commit -m "Added a bunch of exercises for chapter 5. These first few chapter are a slog, not gonna finish this today. Later i'm gonna try and tackle more challenging books"
+  936  qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.isEffectLoaded kwin4_effect_translucency
+  937  kwriteconfig6 --file kwinrc --group Plugins --key translucencyEnabled true
+  938  kwriteconfig6 --file kwinrc --group Plugins --key betterblurDXEnabled true
+  939  qdbus6 org.kde.KWin /KWin reconfigure
+  940  [200~pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop~
+  941  pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop
+  942  systemctl --user stop xwaylandvideobridge && systemctl --user mask xwaylandvideobridge && killall -9 xwaylandvideobridge
+  943  pkill -9 -f xwaylandvideobridge
+  944  systemctl --user mask xwaylandvideobridge.service
+  945  mkdir -p ~/.config/autostart
+  946  printf '[Desktop Entry]\nHidden=true\n' > ~/.config/autostart/org.kde.xwaylandvideobridge.desktop
+  947  ls
+  948  cd Practice-Lab
+  949  ls
+  950  cd python
+  951  ls
+  952  cd Crash-Course
+  953  ls
+  954  cd ..
+  955  git add -A
+  956  git add -a
+  957  git commit -m "Finished the 5th chapter of python crash course"
+  958  git diff
+  959  git status
+  960  git log
+  961  #Okay now it's time for chapter 5
+  962  #okay the type commands pretty self explanotory overall, it tells me the type of th command
+  963  type type
+  964  type ls
+  965  type ln
+  966  type pwd
+  967  type cd
+  968  type mkdir
+  969  type mv
+  970  type cp
+  971  #which tells you well, which version of the command is in there hahaha.
+  972  which ls
+  973  #okay so that's where it is stored
+  974  which type
+  975  which cd
+  976  #Okay that is different from wha teh book said , interesting 
+  977  #Well the help is pretty selef explanoty huh.
+  978  #help cd
+  979  $ help cd
+  980  $help cp
+  981  cp --help
+  982  cd --help
+  983  awesome, lets keep going.
+  984  #Okay I had the comments 
+  985  #oh a lot of executable programs provide a manual
+  986  #man mkdir
+  987  man mkdir
+  988  #interesting.
+  989  apropos files
+  990  #intersting, though kinda cruse like the book side, there is afar too much going on 
+  991  what is, now that is interesting 
+  992  #whatis ls
+  993  whatis ls
+  994  what is ln 
+  995  whatis ln
+  996  man bash
+  997  info ls
+  998  #okay this is great yay teh linux command line is fun
+  999  #Okay okay i'm getting tired today, lets call it a day and commit. one day at a time, keep the flame lit 
+ 1000  cd Practice-Lab
+ 1001  cd linux
+ 1002  cd TLCL
+ 1003  history > chapter5.txt
