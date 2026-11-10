@@ -1,0 +1,1000 @@
+   43  cd -
+   44  #okay, i dont really want keep going right now, i think i get it
+   45  # lets go back gome
+   46  cd /home
+   47  #yeah i think i'm gonna just save it now and later commit it. dude i'm really commited to this stuff haha
+   48  cd /Practice-Lab
+   49  ls
+   50  cd /meduardo
+   51  cd ./meduardo
+   52  cd ./Programas
+   53  ls
+   54  cd -
+   55  ls
+   56  cd /Practice-Lab
+   57  cd ./Practice-Lab
+   58  cd ./linux
+   59  cd ./TLCL
+   60  history > chpter2~3.txt
+   61  ls
+   62  cd ..
+   63  git add -A 
+   64  git commit -m "Added notes and pratice for chapter 2 and 3 of TLCL"
+   65  echo "===== GOOGLE ====="
+   66  curl -4 -L -o /dev/null -sS --max-time 15 -w 'Conexão: %{time_connect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.google.com/
+   67  echo
+   68  echo "===== YOUTUBE ====="
+   69  curl -4 -L -o /dev/null -sS --max-time 15 -w 'Conexão: %{time_connect}s | Primeiro byte: %{time_starttransfer}s | Total: %{time_total}s | HTTP: %{http_code}\n' https://www.youtube.com/
+   70   source /home/meduardo/Practice-Lab/.venv/bin/activate
+   71  claude code
+   72  cd ~/caminho/Project-VATAE
+   73  git status
+   74  git log --oneline @{u}..HEAD      # se listar commits, rode: git push
+   75  git add -a 
+   76  git add -A
+   77  git commit -m "Added a Linux version"
+   78  git push
+   79  d
+   80  git push
+   81  sudo dnf install gh
+   82  gh auth login          # GitHub.com → HTTPS → Yes → Login with a web browser
+   83  gh auth setup-git      # garante que o Git use o gh (normalmente o login já faz isso)
+   84  git push origin main
+   85  git push origin main
+   86  git fetch origin
+   87  git checkout main
+   88  git pull origin main
+   89  git merge --ff-only origin/linux
+   90  git merge --no-edit origin/perfil-app
+   91  git merge --no-edit origin/secretario
+   92  sed -i '/^<<<<<<< /d;/^=======$/d;/^>>>>>>> /d' docs/testes-reais.md
+   93  git add docs/testes-reais.md
+   94  git commit --no-edit
+   95  git merge --no-edit origin/vatty-evolucao
+   96  git merge --no-edit linux
+   97  source .venv/bin/activate
+   98  python -m unittest discover -s tests
+   99  git push origin main linux
+  100  cd Programas
+  101  cd ~/Downloads
+  102  sudo dnf install ./Freddy-0.1.0-1.x86_64.rpm
+  103  find ~ -name "Freddy-0.1.0*.rpm" 2>/dev/null
+  104  ls
+  105  cd Programas
+  106  git clone https://github.com/Marcelao98/Projeto-Frederico.git
+  107  cd Projeto-Frederico
+  108  git checkout claude/busy-clarke-i0agsb
+  109  cd frontend
+  110  npm install
+  111  npm run app
+  112  sudo apt install ./Freddy_0.1.0_amd64.deb
+  113  cd ..
+  114  sudo apt install ./Freddy_0.1.0_amd64.deb
+  115  cd ~/Programas/Project-VATAE
+  116  git checkout main
+  117  git pull origin ccr-883f2a0c-0pd5sv
+  118  git push origin main
+  119  claude
+  120  cd Downloads
+  121  cd ~/Downloads
+  122  sudo dnf install ./Freddy-0.1.0-1.x86_64.rpm
+  123  ls
+  124  cd Programas
+  125  ls
+  126  cd Project-VATAE
+  127  git checkout main
+  128  git pull origin ccr-883f2a0c-0pd5sv
+  129  git push origin main
+  130  claude
+  131  sudo dnf install -y ffmpeg-free portaudio git && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python -m freddy
+  132  sudo dnf install -y gh git ffmpeg-free portaudio && (gh auth status >/dev/null 2>&1 || gh auth login) && { [ -d ~/Projeto-Frederico ] || gh repo clone Marcelao98/Projeto-Freder
+  133  sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  134  [200~sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy~
+  135  sudo dnf install -y git ffmpeg-free portaudio https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  136  sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.2.0/Freddy-0.2.0-1.x86_64.rpm && { [ -d ~/Projeto-Frederico ] || git clone https://github.com/Marcelao98/Projeto-Frederico.git ~/Projeto-Frederico; } && cd ~/Projeto-Frederico && git fetch origin claude/wonderful-ritchie-lnqljv && git checkout claude/wonderful-ritchie-lnqljv && git pull && cd backend && { [ -d .venv ] || python3 -m venv .venv; } && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  137  cd ~/Downloads && tar xzf KOFstation-linux-M1.tar.gz && ./KOFstation-linux/kofstation
+  138  [200~sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.3.0/Freddy-0.3.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy~
+  139  sudo dnf install -y https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.3.0/Freddy-0.3.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  140  claude code
+  141  claude code
+  142  D="$HOME/Programas/Kof Games/KOFstation"; if [ -d "$D" ] && [ -n "$(ls -A "$D" | grep -vx kofstation)" ]; then echo "Já tem outras coisas em $D. Não mexi em nada:"; ls -A "$D"; else mkdir -p "$D" && curl -fL -o "$D/kofstation" https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x "$D/kofstation" && echo "Instalado: $D/kofstation" && "$D/kofstation"; fi
+  143  cd Documentos
+  144  ls
+  145  cd Livros
+  146  ls
+  147  cd Humanidades
+  148  ls
+  149  cd Filosofia
+  150  wget -c -t 5 "https://sanderlei.com.br/PDF/Albert-Camus/Albert-Camus-O-Mito-de-Sisifo.pdf" -O O-Mito-de-Sisifo.pdf
+  151  sudo dnf install -y opus https://github.com/Marcelao98/Projeto-Frederico/releases/download/v0.5.0/Freddy-0.5.0-1.x86_64.rpm && cd ~/Projeto-Frederico && git pull && cd backend && source .venv/bin/activate && pip install -q -r requirements.txt && (freddy >/dev/null 2>&1 &) && python -m freddy
+  152  python3 - <<'PY'
+  153  from pathlib import Path
+  154  import re
+  155  import unicodedata
+  156  root = Path("/home/meduardo/Programas/Kof Games/Games/snes")
+  157  patterns = [
+  158      r'\(Japan\)', r'\(J\)', r'\[Japan\]', r'\[J\]',
+  159      r'NTSC-J', r'\(Japanese\)', r'\[Japanese\]'
+  160  ]
+  161  japanese_chars = re.compile(
+  162      r'[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]'
+  163  )
+  164  suspects = []
+  165  files = [
+  166      p for p in root.rglob("*")
+  167      if p.is_file() and p.suffix.lower() in
+  168      {".sfc", ".smc", ".fig", ".swc", ".zip", ".7z", ".rar"}
+  169  ]
+  170  for p in files:
+  171      name = p.name
+  172      reasons = []
+  173      for pattern in patterns:
+  174          if re.search(pattern, name, re.IGNORECASE):
+  175              reasons.append("TAG JAPONESA")
+  176              break
+  177      if japanese_chars.search(name):
+  178          reasons.append("CARACTERES JAPONESES")
+  179      if reasons:
+  180          suspects.append((p, ", ".join(reasons)))
+  181  report = Path.home() / "Documentos" / "SNES_suspeitos_japones.txt"
+  182  report.parent.mkdir(parents=True, exist_ok=True)
+  183  with report.open("w", encoding="utf-8") as f:
+  184      f.write(f"Arquivos analisados: {len(files)}\n")
+  185      f.write(f"Suspeitos: {len(suspects)}\n\n")
+  186      for p, reason in suspects:
+  187          f.write(f"{reason}\n{p}\n\n")
+  188  print(f"\nArquivos analisados: {len(files)}")
+  189  print(f"Suspeitos japoneses: {len(suspects)}")
+  190  print(f"Relatório: {report}")
+  191  print("\nNenhum arquivo foi alterado.")
+  192  PY
+  193  cat > ~/snes_curator.py <<'PY'
+  194  import re
+  195  import csv
+  196  import unicodedata
+  197  from pathlib import Path
+  198  from datetime import datetime
+  199  from difflib import SequenceMatcher
+  200  ROM_DIR = Path("/home/meduardo/Programas/Kof Games/Games/snes")
+  201  REPORT_DIR = Path.home() / "Documentos"
+  202  EXTENSIONS = {".sfc", ".smc", ".fig", ".swc", ".078", ".bs", ".zip", ".7z", ".rar"}
+  203  GAMES = {
+  204      "RPG": [
+  205          "Chrono Trigger", "Final Fantasy III", "Final Fantasy II",
+  206          "Final Fantasy V", "Super Mario RPG", "EarthBound",
+  207          "Secret of Mana", "Secret of Evermore", "Terranigma",
+  208          "Illusion of Gaia", "Soul Blazer", "Breath of Fire",
+  209          "Breath of Fire II", "Lufia and the Fortress of Doom",
+  210          "Lufia II Rise of the Sinistrals", "The 7th Saga",
+  211          "Robotrek", "Shadowrun", "Ogre Battle The March of the Black Queen",
+  212          "Uncharted Waters New Horizons", "Dragon View", "Paladins Quest",
+  213          "Brain Lord", "The Legend of the Mystical Ninja", "Harvest Moon",
+  214          "Star Ocean", "Tales of Phantasia", "Live A Live",
+  215          "Romancing SaGa 3", "Final Fantasy IV", "Final Fantasy VI",
+  216          "Dragon Quest V", "Dragon Quest VI", "Bahamut Lagoon",
+  217          "Fire Emblem Genealogy of the Holy War", "Fire Emblem Thracia 776",
+  218          "Super Ninja Boy", "Arcana", "Dungeon Master",
+  219          "The Twisted Tales of Spike McFang", "The Secret of the Stars",
+  220          "Inindo Way of the Ninja", "Lagoon", "The Lord of the Rings",
+  221          "The Wizard of Oz", "Equinox", "Mystic Ark",
+  222          "The Adventures of Hourai High", "Dark Half", "G.O.D."
+  223      ],
+  224      "Plataforma e Ação": [
+  225          "Super Mario World", "Super Mario World 2 Yoshis Island",
+  226          "Donkey Kong Country", "Donkey Kong Country 2",
+  227          "Donkey Kong Country 3", "Super Metroid", "Mega Man X",
+  228          "Mega Man X2", "Mega Man X3", "Mega Man 7",
+  229          "Mega Man and Bass", "Castlevania Dracula X",
+  230          "Super Castlevania IV", "Contra III The Alien Wars",
+  231          "Super Ghouls and Ghosts", "ActRaiser", "ActRaiser 2",
+  232          "Demons Crest", "UN Squadron", "Sunset Riders",
+  233          "Wild Guns", "The Ninja Warriors", "Pocky and Rocky",
+  234          "Pocky and Rocky 2", "The Great Circus Mystery",
+  235          "Goof Troop", "Disneys Aladdin", "The Lion King",
+  236          "Taz Mania", "Aero the Acro Bat", "Aero the Acro Bat 2",
+  237          "Sparkster", "Ristar", "B.O.B.", "Earthworm Jim",
+  238          "Earthworm Jim 2", "Plok", "Kirbys Dream Land 3",
+  239          "Kirby Super Star", "Super Adventure Island II",
+  240          "Super Adventure Island", "Joe and Mac", "Joe and Mac 2",
+  241          "Prehistorik Man", "Zombies Ate My Neighbors",
+  242          "The Firemen", "Super Bonk", "Hagane",
+  243          "Rendering Ranger R2", "Gon"
+  244      ],
+  245      "Beat'em up": [
+  246          "Final Fight", "Final Fight 2", "Final Fight 3",
+  247          "The King of Dragons", "Knights of the Round",
+  248          "Captain Commando", "Battletoads in Battlemaniacs",
+  249          "Turtles in Time", "Mighty Morphin Power Rangers",
+  250          "Mighty Morphin Power Rangers The Movie", "Batman Returns",
+  251          "The Peace Keepers", "Rival Turf", "Brawl Brothers",
+  252          "Biker Mice from Mars", "Undercover Cops",
+  253          "Ghost Chaser Densei", "Sonic Blast Man",
+  254          "Sonic Blast Man II", "Rushing Beat", "Rushing Beat Ran",
+  255          "Rushing Beat Shura", "The Combatribes", "Super Double Dragon",
+  256          "Double Dragon V", "Iron Commando", "Legend",
+  257          "Ninja Warriors Again", "Power Rangers Fighting Edition",
+  258          "Godzilla Kaijuu Daikessen", "Kamen Rider",
+  259          "Battle Tycoon", "Ranma 1/2 Hard Battle", "WeaponLord",
+  260          "Killer Instinct", "Street Fighter II Turbo",
+  261          "Super Street Fighter II", "Mortal Kombat II",
+  262          "Mortal Kombat III", "Ultimate Mortal Kombat 3",
+  263          "Fatal Fury Special", "Art of Fighting", "Samurai Shodown",
+  264          "World Heroes 2", "TMNT Tournament Fighters",
+  265          "ClayFighter", "ClayFighter 2", "Battletoads Double Dragon",
+  266          "Super Smash TV"
+  267      ],
+  268      "Shooters": [
+  269          "Gradius III", "R-Type III", "Super R-Type", "Axelay",
+  270          "UN Squadron", "Space Megaforce", "Darius Twin",
+  271          "Darius Force", "Parodius", "Gokujou Parodius",
+  272          "Popn TwinBee", "Strike Gunner STG", "Area 88",
+  273          "Super Aleste", "Raiden Trad", "Firepower 2000",
+  274          "Earth Defense Force", "Macross Scrambled Valkyrie",
+  275          "Jikkyou Oshaberi Parodius", "Cotton 100%",
+  276          "Sonic Wings", "Aero Fighters", "BioMetal", "D-Force",
+  277          "Super Nova", "Imperium", "Kiki KaiKai", "Sutte Hakkun",
+  278          "BlaZeon", "Choplifter III", "Buster Bros",
+  279          "Super Smash TV", "Total Carnage", "Wild Guns",
+  280          "Operation Logic Bomb", "Star Fox", "Star Fox 2",
+  281          "Doom", "Wolfenstein 3D", "Battle Clash", "Metal Combat",
+  282          "Space Invaders", "Super Earth Defense Force",
+  283          "The Firemen", "Phalanx", "U.N. Squadron",
+  284          "Robo Aleste", "Super Nova", "Cybernator",
+  285          "Super Turrican"
+  286      ]
+  287  }
+  288  ALIASES = {
+  289      "Final Fantasy III": ["Final Fantasy VI"],
+  290      "Final Fantasy II": ["Final Fantasy IV"],
+  291      "The Legend of the Mystical Ninja": ["Ganbare Goemon"],
+  292      "UN Squadron": ["Area 88"],
+  293      "The Great Circus Mystery": ["Mickey Magical Adventure 3"],
+  294      "The Ninja Warriors": ["Ninja Warriors Again"],
+  295      "Mega Man and Bass": ["Rockman and Forte"],
+  296      "Super Adventure Island II": ["Takahashi Meijin no Daibouken Jima 2"]
+  297  }
+  298  def normalize(name):
+  299      name = unicodedata.normalize("NFKD", name)
+  300      name = "".join(c for c in name if not unicodedata.combining(c))
+  301      name = name.lower()
+  302      name = re.sub(r"\([^)]*\)|\[[^]]*\]|\{[^}]*\}", " ", name)
+  303      name = re.sub(
+  304          r"\b(usa|europe|japan|world|rev\s*\d*|"
+  305          r"version\s*\d*|u|e|j|en|br|pt-br|good|bad)\b",
+  306          " ", name
+  307      )
+  308      return re.sub(r"[^a-z0-9]", "", name)
+  309  def find_matches(game, files):
+  310      variants = [game] + ALIASES.get(game, [])
+  311      matches = []
+  312      for file in files:
+  313          filename = normalize(file.stem)
+  314          for variant in variants:
+  315              target = normalize(variant)
+  316              score = SequenceMatcher(None, filename, target).ratio()
+  317              if filename == target:
+  318                  score = 1.0
+  319              elif len(target) >= 7 and target in filename:
+  320                  score = max(score, 0.94)
+  321              if score >= 0.86:
+  322                  matches.append((score, file))
+  323                  break
+  324      return sorted(matches, key=lambda x: x[0], reverse=True)
+  325  def main():
+  326      if not ROM_DIR.is_dir():
+  327          print(f"ERRO: pasta não encontrada: {ROM_DIR}")
+  328          return
+  329      REPORT_DIR.mkdir(parents=True, exist_ok=True)
+  330      files = [
+  331          p for p in ROM_DIR.rglob("*")
+  332          if p.is_file() and p.suffix.lower() in EXTENSIONS
+  333      ]
+  334      print(f"\nROMs encontradas: {len(files)}")
+  335      print("Analisando catálogo SNES...\n")
+  336      results = []
+  337      found_total = 0
+  338      missing_total = 0
+  339      for category, games in GAMES.items():
+  340          print(f"\n===== {category} =====")
+  341          for game in games:
+  342              matches = find_matches(game, files)
+  343              if matches:
+  344                  found_total += 1
+  345                  status = "ENCONTRADO"
+  346                  filename = matches[0][1].name
+  347                  print(f"[OK] {game} -> {filename}")
+  348                  if len(matches) > 1:
+  349                      print(f"     Atenção: {len(matches)} correspondências possíveis")
+  350              else:
+  351                  missing_total += 1
+  352                  status = "FALTANDO"
+  353                  filename = ""
+  354                  print(f"[FALTA] {game}")
+  355              results.append({
+  356                  "Categoria": category,
+  357                  "Jogo": game,
+  358                  "Status": status,
+  359                  "Arquivo": filename,
+  360                  "Correspondencias": len(matches)
+  361              })
+  362      total = len(results)
+  363      coverage = found_total / total * 100 if total else 0
+  364      timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+  365      txt_path = REPORT_DIR / f"SNES_Curadoria_{timestamp}.txt"
+  366      csv_path = REPORT_DIR / f"SNES_Curadoria_{timestamp}.csv"
+  367      with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
+  368          writer = csv.DictWriter(f, fieldnames=results[0].keys())
+  369          writer.writeheader()
+  370          writer.writerows(results)
+  371      with open(txt_path, "w", encoding="utf-8") as f:
+  372          f.write("RELATORIO DE CURADORIA SNES\n")
+  373          f.write("=" * 45 + "\n")
+  374          f.write(f"Pasta: {ROM_DIR}\n")
+  375          f.write(f"Arquivos analisados: {len(files)}\n")
+  376          f.write(f"Jogos no catálogo: {total}\n")
+  377          f.write(f"Encontrados: {found_total}\n")
+  378          f.write(f"Faltantes: {missing_total}\n")
+  379          f.write(f"Cobertura: {coverage:.1f}%\n")
+  380          for category in GAMES:
+  381              f.write(f"\n\n### {category}\n")
+  382              for r in results:
+  383                  if r["Categoria"] == category:
+  384                      f.write(
+  385                          f"[{'OK' if r['Status'] == 'ENCONTRADO' else 'FALTA'}] "
+  386                          f"{r['Jogo']}"
+  387                      )
+  388                      if r["Arquivo"]:
+  389                          f.write(f" -> {r['Arquivo']}")
+  390                      f.write("\n")
+  391      print("\n" + "=" * 45)
+  392      print("RESUMO")
+  393      print("=" * 45)
+  394      print(f"Catálogo:    {total}")
+  395      print(f"Encontrados: {found_total}")
+  396      print(f"Faltantes:   {missing_total}")
+  397      print(f"Cobertura:   {coverage:.1f}%")
+  398      print(f"\nRelatórios salvos em:\n{txt_path}\n{csv_path}")
+  399      print("\nNenhuma ROM foi modificada.")
+  400  if __name__ == "__main__":
+  401      main()
+  402  PY
+  403  python3 ~/snes_curator.py
+  404  claude code
+  405  claude code 
+  406  Claude code
+  407  claude code
+  408  claude
+  409  claude
+  410  claude, APENAS FAÇA A TELA IR DO NOTEBOOK APRA A TV QUE ESTÁ COECTADA, RODE O COMANDO DIRETO. CERTO
+  411  CLAUDE
+  412  claude
+  413  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  414  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  415  mkdir -p ~/Programas/"Kof Games"/KOFstation && curl -fL -o ~/Programas/"Kof Games"/KOFstation/kofstation https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/kofstation && chmod +x ~/Programas/"Kof Games"/KOFstation/kofstation && ~/Programas/"Kof Games"/KOFstation/kofstation
+  416  cd Programas
+  417  ls
+  418  cd KOFLibrary
+  419  claude
+  420   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  421  ls
+  422  mv Chapter3.ipynb Practice-lab
+  423  cd Practice-Lab
+  424  mv Chapter3.ipynb Linux
+  425  ls
+  426  mv Chapter3.ipynb Linux
+  427  ls
+  428  cd --
+  429  ls
+  430  cd Practice
+  431  rm Practice
+  432  ls
+  433  cd Practice-lab
+  434  find Chapter3.ipynb
+  435  ls
+  436  cd Practice-Lab
+  437  ls
+  438  cd linux
+  439  ls
+  440  cd --
+  441  cd Practice-Lab
+  442  ls
+  443  cd linux
+  444  ls
+  445  cd ..
+  446  ls
+  447  cd python
+  448  ls
+  449  cd Crash-Course
+  450  pwg
+  451  pwd
+  452  #Alright now we are gonna move into chapter 4 of the Linux command line, right.
+  453  # he is gonna introduce us to the cp, mv mkdir, rm and ln commands
+  454  #cp commands copies files, okay
+  455  #mv move and renames files and directories
+  456  #mkdir creates directories
+  457  #rm removes files and directories.
+  458  #and lastly, ln create hard and symbolic links. great, I dunno what that means, lets keep reading
+  459  # he is gonna talk now about wildcards, huh that is fun, i guess i understand what htey are from excele, but lets keep reading
+  460  ls
+  461  cd Downloads
+  462  ls
+  463  #Let's try something 
+  464  ls
+  465  cd --
+  466  cd Programas
+  467  ls
+  468  cd Kof Games
+  469  cd 'Kof Games'
+  470  ls
+  471  cd Games
+  472  cd snes
+  473  pwd
+  474  cd .
+  475   cd ~
+  476  ls
+  477  rm snes_curator.py
+  478  cd Downloads
+  479  ls
+  480  #Guess what, all those zip are snes files, so...
+  481  mv *.zip /home/meduardo/Programas/Kof Games/Games/snes
+  482  #okay, i just forgot the damn space key haha
+  483  mv *.zip "/home/meduardo/Programas/Kof Games/Games/snes/"
+  484  ls
+  485  awesome, oh hey this command line stuff is actually pretty useful huh. 
+  486  rm *.jpg
+  487  ls
+  488  rm *.png
+  489  #okay I didn't really need thos anymore, lets keep reading 
+  490  ls
+  491  rm *.kofsave
+  492  ls
+  493  #Awesome
+  494  ls
+  495  cd --
+  496  cd
+  497  ls
+  498  cp -r Programas Files
+  499  ls
+  500  cd FIles
+  501  cd Files
+  502  ls
+  503  c -
+  504  down
+  505  up
+  506  cd --
+  507  rm Files
+  508  #okay to remove a directory i need recursion, makes sense huh
+  509  rm -r Files
+  510  rm -rf Files
+  511  ls
+  512  #Okay awesome now let's learn about the ln linking stuff
+  513  ln -s item link
+  514  #oh i t think i get it 
+  515  cd
+  516  ls
+  517  rm link
+  518  cd
+  519  ls
+  520  ln -s roms.txt jogos
+  521  ls
+  522  #hmm not quite
+  523  rm *.txt
+  524  ls
+  525  #okay os now its lie a pointer and it has no refernece anymore, i get it.
+  526  rm jogos
+  527  ls
+  528  cd Programas
+  529  pwd
+  530  cd --
+  531  MV Projeto-Frederico /home/meduardo/Programas
+  532  mv Projeto-Frederico /home/meduardo/Programas
+  533  cd Projeto-Frederico
+  534  ls
+  535  cd --
+  536  mv -rf Projeto-Frederico /home/meduardo/Programas
+  537  mv --help
+  538  ls
+  539  cd Projeto-Frederico /home/meduardo/Programas
+  540  mv Projeto-Frederico /home/meduardo/Programas
+  541  rm Projeto-Frederico
+  542  rm -r Projeto-Frederico
+  543  rm -rf Projeto-Frederico
+  544  #okay let's build a playground, it makes sense for it to, be, well.... in hte Practice-Lab. so
+  545  cd Practice-Lab
+  546  cd linux
+  547  mkdir Playground
+  548  # let's make some more directories 
+  549  mkdir dir1 dir2 dir3
+  550  nano whatever.txt
+  551  ls
+  552  cd ./Playground
+  553  cd -
+  554  rm dir1 dir2 dir3
+  555  rm -rf dir1 dir2 dir3
+  556  ls
+  557  mv whatever.txt ./Playground
+  558  ls
+  559  cd Playground
+  560  ls
+  561  mkdir dir1 dir2 dir3
+  562  ls
+  563  cp whatever.txt dir1
+  564  rm whatever.txt
+  565  cd dir1
+  566  ls
+  567  pwd
+  568  mv whatever.txt [200~/home/meduardo/Practice-Lab/linux/Playground/dir1
+  569  ~
+  570  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir1
+  571  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  572  ls
+  573  cd /home/meduardo/Practice-Lab/linux/Playground/dir2
+  574  ls
+  575  mv /home/meduardo/Practice-Lab/linux/Playground/dir3
+  576  mv whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir3
+  577  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  578  ls
+  579  cd /home/meduardo/Practice-Lab/linux/Playground/dir3
+  580  ls
+  581  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2 /home/meduardo/Practice-Lab/linux/Playground/dir1
+  582  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  583  cp /home/meduardo/Practice-Lab/linux/Playground/dir1
+  584  cp whatever.txt. /home/meduardo/Practice-Lab/linux/Playground/dir1
+  585  ls
+  586  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir2
+  587  cp whatever.txt /home/meduardo/Practice-Lab/linux/Playground/dir1
+  588  ls
+  589  cd --
+  590  cd /home/meduardo/Practice-Lab/linux/Playground/dir1
+  591  cd -
+  592  ls
+  593  /home/meduardo/Practice-Lab/linux/Playground/dir1
+  594  cd /home/meduardo/Practice-Lab/linux/Playground/dir1
+  595  cd ..
+  596  ls
+  597  ls 
+  598  ls -rf
+  599  ls -help
+  600  ls -- help
+  601  ls --help
+  602  ls -R
+  603  #Great so now that is the way huh
+  604  cd dir1
+  605  mv whatever.txt anything.txt
+  606  cd ..
+  607  cd dir2
+  608  ls
+  609  mv whatever.txt randombullshit.txt
+  610  ln mess randombullshit.txt
+  611  ls
+  612  ls mess randombullshit.txt
+  613  ln mess randombullshit.txt
+  614  ls
+  615  ln randombullshit.txt random
+  616  cd ..
+  617  cd dir1
+  618  ls
+  619  ls anything.txt random
+  620  ln anything.txt random
+  621  cd ..
+  622  ls
+  623  cd dir3
+  624  ls
+  625  rn whatever.txt random
+  626  ln anything.txt random
+  627  ln whatever.txt random
+  628  ls
+  629   #okay man time to go to sleep and save this mess 
+  630  cd ..
+  631  cd TLCL
+  632  ls
+  633  history > chapter4.txt
+  634  ls
+  635  cd..
+  636  cd ..
+  637  git add -A
+  638  git commit -M "Practiced chapter 4 of the Linux Command Line, now i'm gonna go sleep and then practice some more later"
+  639  git commit -m "Read chapter 4 of the linux command line, saved the madness in a txt file for chapter 4, and created a playground folder isnide it. Later I think i'm gonna move this playground folder to the basi of Practice-Lab"
+  640  git diff
+  641  git log
+  642  ls
+  643  cd Pracctice-Lab
+  644  cd Practice-Lab
+  645  git add -A
+  646  git commit -m "Added Chapter 3 for Python Crash Course"
+  647  ls
+  648  cd Programas
+  649  ls
+  650  cd 'Kof Games'
+  651  claude
+  652  claude, vai na pasta downlaod, e passsa os livros que estão lá para o loal certo. depois e u faço um script para isso
+  653  claude
+  654  claude
+  655  ls
+  656  mv CHapter4.ipynb Practice-lab/python
+  657  mv Chapter4.ipynb Practice-Lab
+  658  cd Practice-Lab
+  659  ls
+  660  mv Chapter4.ipynb python
+  661  cd python
+  662  ls
+  663  mv Chapter4.ipynb Crash-Course
+  664  cd ..
+  665  git add -a
+  666  git add -A
+  667  git commit -m "Added a notebook for chapter 4 of crash course. Oh man this is really really boring me to death"
+  668   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  669  sd
+  670  damn this is cool hahahaha
+  671  yay -S kwin-effects-better-blur-dx
+  672  [200~sudo dnf -y install git cmake extra-cmake-modules gcc-g++ kf6-kwindowsystem-devel plasma-workspace-devel libplasma-devel qt6-qtbase-private-devel qt6-qtbase-devel cmake kwin-devel extra-cmake-modules kwin-devel kf6-knotifications-devel kf6-kio-devel kf6-kcrash-devel kf6-ki18n-devel kf6-kguiaddons-devel libepoxy-devel kf6-kglobalaccel-devel kf6-kcmutils-devel kf6-kconfigwidgets-devel kf6-kdeclarative-devel kdecoration-devel kf6-kglobalaccel kf6-kdeclarative libplasma kf6-kio qt6-qtbase kf6-kguiaddons kf6-ki18n wayland-devel libdrm-devel~
+  673  sudo dnf -y install git cmake extra-cmake-modules gcc-g++ kf6-kwindowsystem-devel plasma-workspace-devel libplasma-devel qt6-qtbase-private-devel qt6-qtbase-devel cmake kwin-devel extra-cmake-modules kwin-devel kf6-knotifications-devel kf6-kio-devel kf6-kcrash-devel kf6-ki18n-devel kf6-kguiaddons-devel libepoxy-devel kf6-kglobalaccel-devel kf6-kcmutils-devel kf6-kconfigwidgets-devel kf6-kdeclarative-devel kdecoration-devel kf6-kglobalaccel kf6-kdeclarative libplasma kf6-kio qt6-qtbase kf6-kguiaddons kf6-ki18n wayland-devel libdrm-devel
+  674  plasmashell --version
+  675  echo $XDG_SESSION_TYPE
+  676  plasmashell --version
+  677  echo $XDG_SESSION_TYcat /etc/fedora-release
+  678  rpm -q kwin
+  679  cat /etc/fedora-release
+  680  rpm -q kwin
+  681  sudo dnf copr enable infinality/kwin-effects-better-blur-dx
+  682  sudo dnf install kwin-effects-better-blur-dx
+  683  rpm -q kmime kf6-kmime
+  684  dnf list --installed '*kmime*'
+  685  dnf repolist --enabled
+  686  sudo dnf upgrade --refresh
+  687  sudo dnf install git cmake extra-cmake-modules gettext
+  688  git clone https://github.com/paulmcauley/klassy
+  689  cd klassy
+  690  git checkout plasma6.6
+  691  ./install.sh
+  692  sudo dnf install kwin-effects-better-blur-dx
+  693  THIS LOOK SO COOL HAHAHAH 
+  694  sudo reboot
+  695  THIS LOOKS SO GOOD 
+  696  kwin_wayland --replace
+  697  sudo dnf install git cmake extra-cmake-modules gettext
+  698  sudo dnf install "cmake(KF5Config)" "cmake(KF5CoreAddons)" "cmake(KF5FrameworkIntegration)" "cmake(KF5GuiAddons)" "cmake(KF5WindowSystem)" "cmake(KF5I18n)" "cmake(KF5KCMUtils)" "cmake(Qt5DBus)" "cmake(Qt5Quick)" "cmake(Qt5Widgets)" "cmake(Qt5X11Extras)" "cmake(KDecoration3)" "cmake(KF6ColorScheme)" "cmake(KF6Config)" "cmake(KF6CoreAddons)" "cmake(KF6FrameworkIntegration)" "cmake(KF6GuiAddons)" "cmake(KF6I18n)" "cmake(KF6KCMUtils)" "cmake(KF6WindowSystem)" "cmake(Qt6Core)" "cmake(Qt6DBus)" "cmake(Qt6Quick)" "cmake(Qt6Svg)" "cmake(Qt6Widgets)" "cmake(Qt6Xml)"
+  699  git clone https://github.com/paulmcauley/klassy
+  700  cd klassy
+  701  git checkout plasma6.6
+  702  ./install.sh
+  703  cd ..
+  704  cd klassy
+  705  git checkout plasma6.6
+  706  ./install.sh
+  707  sudo dnf install pipx git gcc python3-devel dbus-glib-devel glib2-devel extra-cmake-modules
+  708  pipx ensurepath
+  709  pipx install kde-material-you-colors
+  710  pipx inject kde-material-you-colors pywal16
+  711  as
+  712  rm -f ~/.config/plasmashellrc && systemctl --user restart plasma-plasmashell
+  713  systemctl --user stop xwaylandvideobridge && systemctl --user mask xwaylandvideobridge && killall -9 xwaylandvideobridge
+  714  [200~pkill -9 -f xwaylandvideobridge~
+  715  pkill -9 -f xwaylandvideobridge
+  716  rm -f ~/.config/autostart/*xwaylandvideobridge* ~/.local/share/applications/*xwaylandvideobridge*
+  717  pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop
+  718  sudo apt install latte-dock      # Ubuntu/Debian/KDE Neon
+  719  sudo pacman -S latte-dock        # Arch/Manjaro
+  720   source /home/meduardo/Practice-Lab/.venv/bin/activate
+  721  ls
+  722  cd Programas
+  723  ls
+  724  cd ..
+  725  cd Practice-Lab
+  726  ls
+  727  cd python
+  728  ls
+  729  cd Crash-Course
+  730  ..
+  731  ls
+  732  cd ..
+  733  git add -A
+  734  got commit -m "Added a bunch of exercises for chapter 5. these first few chapters are a fucking slog haha, not gonna finish it today. Later I'm gonna try and tackle a mor challenging book"
+  735  git commit -m "Added a bunch of exercises for chapter 5. These first few chapter are a slog, not gonna finish this today. Later i'm gonna try and tackle more challenging books"
+  736  qdbus6 org.kde.KWin /Effects org.kde.kwin.Effects.isEffectLoaded kwin4_effect_translucency
+  737  kwriteconfig6 --file kwinrc --group Plugins --key translucencyEnabled true
+  738  kwriteconfig6 --file kwinrc --group Plugins --key betterblurDXEnabled true
+  739  qdbus6 org.kde.KWin /KWin reconfigure
+  740  [200~pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop~
+  741  pkill -x xwaylandvideobridge && rm -f ~/.config/autostart/*xwaylandvideobridge*.desktop
+  742  systemctl --user stop xwaylandvideobridge && systemctl --user mask xwaylandvideobridge && killall -9 xwaylandvideobridge
+  743  pkill -9 -f xwaylandvideobridge
+  744  systemctl --user mask xwaylandvideobridge.service
+  745  mkdir -p ~/.config/autostart
+  746  printf '[Desktop Entry]\nHidden=true\n' > ~/.config/autostart/org.kde.xwaylandvideobridge.desktop
+  747  ls
+  748  cd Practice-Lab
+  749  ls
+  750  cd python
+  751  ls
+  752  cd Crash-Course
+  753  ls
+  754  cd ..
+  755  git add -A
+  756  git add -a
+  757  git commit -m "Finished the 5th chapter of python crash course"
+  758  git diff
+  759  git status
+  760  git log
+  761  #Okay now it's time for chapter 5
+  762  #okay the type commands pretty self explanotory overall, it tells me the type of th command
+  763  type type
+  764  type ls
+  765  type ln
+  766  type pwd
+  767  type cd
+  768  type mkdir
+  769  type mv
+  770  type cp
+  771  #which tells you well, which version of the command is in there hahaha.
+  772  which ls
+  773  #okay so that's where it is stored
+  774  which type
+  775  which cd
+  776  #Okay that is different from wha teh book said , interesting 
+  777  #Well the help is pretty selef explanoty huh.
+  778  #help cd
+  779  $ help cd
+  780  $help cp
+  781  cp --help
+  782  cd --help
+  783  awesome, lets keep going.
+  784  #Okay I had the comments 
+  785  #oh a lot of executable programs provide a manual
+  786  #man mkdir
+  787  man mkdir
+  788  #interesting.
+  789  apropos files
+  790  #intersting, though kinda cruse like the book side, there is afar too much going on 
+  791  what is, now that is interesting 
+  792  #whatis ls
+  793  whatis ls
+  794  what is ln 
+  795  whatis ln
+  796  man bash
+  797  info ls
+  798  #okay this is great yay teh linux command line is fun
+  799  #Okay okay i'm getting tired today, lets call it a day and commit. one day at a time, keep the flame lit 
+  800  cd Practice-Lab
+  801  cd linux
+  802  cd TLCL
+  803  history > chapter5.txt
+  804  ls
+  805  cd ..
+  806  git aa -A 
+  807  git add -a
+  808  git add -A
+  809  git commit -m "Added a bit of my pracitce along for chapter 5 of the linux command line"
+  810  grep -iE 'translucency|blur' ~/.config/kwinrc
+  811  kwriteconfig6 --file kwinrc --group Plugins --key blurEnabled true && qdbus6 org.kde.KWin /KWin reconfigure
+  812  sudo dnf install qt6-qttools
+  813  cd Practice-Lab
+  814  cd python
+  815  cd Crash-Course
+  816  ls
+  817  cd ..
+  818  git add -A
+  819  git commit -m "Half way throguh chapter 6 of the python crash coruse book"
+  820  mkdir -p ~/Programas/"Kof Games" && curl -fL https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/KOFstation-linux.tar.gz | tar -xz -C ~/Programas/"Kof Games" && ~/Programas/"Kof Games"/KOFstation/kofstation
+  821  calude
+  822  claude
+  823  mkdir -p ~/Programas/"Kof Games" && curl -fL https://raw.githubusercontent.com/Marcelao98/KOFstation/teste-binarios/KOFstation-linux.tar.gz | tar -xz -C ~/Programas/"Kof Games" && ~/Programas/"Kof Games"/KOFstation/kofstation --instalar && ~/Programas/"Kof Games"/KOFstation/kofstation
+  824  curl -fsSL https://opencode.ai/install | bash
+  825  opencode
+  826  mkdir -p ~/Projetos && git clone https://github.com/Marcelao98/KOFStation.git ~/Projetos/KOFstation-opencode
+  827  ls
+  828  cd Projetos
+  829  cd
+  830  ls
+  831  cd Projetos
+  832  ls
+  833  cd KOFstation-opencode
+  834  opencode
+  835  cd ~ && ( [ -d Projeto-Frederico ] && cd Projeto-Frederico && git checkout main && git pull || git clone https://github.com/Marcelao98/Projeto-Frederico.git ) && cd ~/Projeto-Frederico && python3 -m venv ~/.venv-fredify && ~/.venv-fredify/bin/pip install -q -U yt-dlp && echo "PRONTO"
+  836  cd ~/Projeto-Frederico/backend && ~/.venv-fredify/bin/python scripts/catalogo_bloco.py ../acervo/catalogo/blocos/bloco-01.csv
+  837  ls
+  838  rm 'Chapter 5.ipynb'
+  839  ls
+  840  mv Projeto-Frederico Projetos
+  841  ls
+  842  mkdir Jogos
+  843  ls
+  844  cd Jogos
+  845  pwd
+  846  cd ..
+  847  cd Programas
+  848  ls
+  849  mv 'Kof Games' /home/meduardo/Jogos
+  850  cd ..
+  851  cd .
+  852  cd ~
+  853  l
+  854  ls
+  855  cd ..
+  856  cd ~
+  857  ls
+  858  cd root
+  859  ls
+  860  cd Jogos
+  861  ls
+  862  cd 'Kof Games'
+  863  ls
+  864  cd Kofstation
+  865  cd KOFstation
+  866  opencode
+  867  open code
+  868  opencode
+  869  ls
+  870  cd Documentos
+  871  ls
+  872  rm *.png
+  873  ls SNES*
+  874  cd ..
+  875  ls 
+  876  cd Jogos
+  877  cd snes
+  878  ls
+  879  cd 'Kof Games'
+  880  ls
+  881  cd Games
+  882  ls
+  883  cd snes
+  884  pwd
+  885  cd .
+  886   cd 
+  887  cd Documentos
+  888  ls
+  889  mv SNES* /home/meduardo/Jogos/Kof Games/Games/snes
+  890  mv SNES* "/home/meduardo/Jogos/Kof Games/Games/snes"
+  891  CD
+  892  ls
+  893  rm Discworld*
+  894   ls *snes*
+  895  rm *adulto*
+  896  mv *snes* "/home/meduardo/Jogos/Kof Games/Games/snes"
+  897  meduardo@Marcelo:~/Documentos$ CD
+  898  mv *snes* "/home/meduardo/Jogos/Kof Games/Games/snes"
+  899  meduardo@Marcelo:~/Documentos$ CD
+  900  ls
+  901  cd ..
+  902  ls
+  903  cd Downloads
+  904  ls
+  905   rm *.png
+  906  rm *.pdf *.xlsx
+  907  ls
+  908  rm *Eden*
+  909  ls
+  910  rm *freddy*
+  911  rm -rf *freddy*
+  912  cd mv *snes* "/home/meduardo/Jogos/Kof Games/Games/"
+  913  cd "/home/meduardo/Jogos/Kof Games/Games/"
+  914  ls
+  915  cd ~
+  916  cd
+  917  ls
+  918  cd Downloads
+  919  ls
+  920  mv *Enders* "/home/meduardo/Jogos/Kof Games/Games/ps2"
+  921  rm *.pptx *.md
+  922  sudo dnd install ./chatgpt.x86_64.rpm
+  923  sudo dnf install ./chatgpt.x86_64.rpm
+  924  ls
+  925  curl -fsSL https://chatgpt.com/codex/install.sh | sh
+  926  codex
+  927  curl -fsSL https://happier.dev/install | bash
+  928  happier
+  929  happier -- help
+  930  happier --help
+  931  happier codex
+  932  mkdir -p ~/kof && git clone -b claude/busy-ritchie-wrvk8h https://github.com/Marcelao98/KOFstation.git ~/kof/KOFStation && cd ~/kof/KOFStation && sh tools/agentes.sh A B
+  933  tail -n 25 ~/kof/agente-a.log; echo ======; tail -n 25 ~/kof/agente-b.log; echo ======; for p in a b; do (cd ~/kof/KOFStation-agente-$p && echo "pasta $p:" && git status --short | head && git log --oneline -3); done
+  934  ( [ -d Fierium ] || git clone https://github.com/Marcelao98/Fierium.git ) && cd Fierium && git fetch origin && git checkout claude/eloquent-fermat-z05qmh && git pull origin claude/eloquent-fermat-z05qmh && pnpm install && pnpm despachar m1.5 1 && tmux attach -t fierium-m1_5-1
+  935  git clone https://github.com/Marcelao98/Fierium.git
+  936  cd Fierium && git checkout claude/eloquent-fermat-z05qmh
+  937  pnpm install
+  938  pnpm despachar m1.5 1 --simular
+  939  git fetch origin claude/busy-ritchie-wrvk8h && git checkout claude/busy-ritchie-wrvk8h && git pull
+  940  ( [ -d Fierium ] || git clone https://github.com/Marcelao98/Fierium.git ) && cd Fierium && git fetch origin && git checkout claude/eloquent-fermat-z05qmh && git pull origin claude/eloquent-fermat-z05qmh && corepack enable && pnpm install && pnpm despachar m1.5 1 && tmux attach -t fierium-m1_5-1
+  941  happier codex
+  942  /home/meduardo/kof
+  943  cd /home/meduardo/kof
+  944  ls
+  945  happier codex
+  946  happier
+  947  happier --help
+  948  happier session
+  949  happier session list
+  950  happier claude
+  951  happier --claude
+  952  happier 
+  953  ls
+  954  cd Practice-Lab
+  955  ls
+  956  cd python/Crash-Course
+  957  ls
+  958  cd ..
+  959  git add -A
+  960  git coomit -m "Finished chapter 6 of python crash course"
+  961  git commit -m "Finished chapter 6 of python crash course"
+  962  #alright now let's keep going on the book okay , the linux one. Learning the linux command line is ultra duper fun, i'm really liking it so far you see. 
+  963  #he is gonna teach me about aliases here
+  964  #he said it is possible to put more than a single command on aline by separitng them with a ;
+  965  ls
+  966  cd Downloads; ls Downloads
+  967  cd Downloads; ls
+  968  cd ..
+  969  cd Downloads; ls
+  970  rm *.rpm *.sh
+  971  ls
+  972  cd ..
+  973  #Yeah okay now he is gonna make aliases
+  974  huh
+  975  #cd Documentos
+  976  cd Documentos
+  977  ls
+  978  #oh i gotta delete randombullshit
+  979  rm randombullshit
+  980  ls
+  981  cd ..
+  982  ls
+  983  mv Fierium Programa
+  984  ls
+  985  PWD
+  986  pwd
+  987  cd Programas
+  988  ls
+  989  cd ..
+  990  cd Programa
+  991  ls
+  992  cd Fierium
+  993  ls
+  994  cd ..
+  995  #okay lets create an alias huh
+  996  cd Programas
+  997  ls
+  998  #oh i dunno what i would need an alais for lets think
+  999  cd ..
+ 1000  cd Downlaods
+ 1001  cd Downloads
+ 1002  ls
+ 1003  #leets say i want to go up and showup, so shup
+ 1004  cd .., ls
+ 1005  cd ..; ls
+ 1006  alias shup ='cd..; ls'
+ 1007  alias
+ 1008  alias shup='cd..;ls'
+ 1009  ls
+ 1010  cd Programas
+ 1011  ls
+ 1012  #oh man i need to move all the repos to the repo folders huh
+ 1013  mv proj* Repositórios
+ 1014  ls
+ 1015  cd Repositórios
+ 1016  ls
+ 1017  cd..
+ 1018  shup
+ 1019  # oh okay i made a msitake hahaha, my bad
+ 1020  nano ~/.bashrc
+ 1021  echo "alias shup='cd ..'" >> ~/.bashrc
+ 1022  source ~/.bashrc
+ 1023  shup
+ 1024  #okay i noe have my first ever alias ahahaha man am i a newbie huh
+ 1025  #okay man unalias and whatnot. Now i know to loopk up the comuemtantion hahaha. lets save this progress 
+ 1026  ls
+ 1027  cd Practice-Lab
+ 1028  ls
+ 1029  cd python
+ 1030  ls
+ 1031  shup
+ 1032  up
+ 1033  cd linux
+ 1034  shup
+ 1035  cd *l
+ 1036  cd l*
+ 1037  #huh that is easier 
+ 1038  cd *t
+ 1039  ls
+ 1040  cd T*
+ 1041  ls
+ 1042  history > chapter5-2.txt
