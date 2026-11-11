@@ -9,3 +9,5 @@ def sumit_up(*numbers):
 
 result = sumit_up(1,3,4,3,7)
 print(result)
+
+
