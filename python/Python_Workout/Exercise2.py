@@ -28,4 +28,25 @@ def avg_up(*numbers):
     return total / len(numbers)   
 
 
-print(avg_up(1,2,3))
+#print(avg_up(1,2,3))
+
+#Okay now i need to build a function that takes a list of word huh 
+
+def describe_words(*words):
+    num_words = []
+    for word in sorted(words, key=len):
+        num_words.append(len(word))
+    info_words = []
+    info_words.append(num_words[0])
+    info_words.append(num_words[-1])
+
+    print(info_words)
+    print(sum(num_words)/ len(num_words))
+   
+
+
+
+
+
+
+describe_words('apple','banana','asdasdasdasd','the')
