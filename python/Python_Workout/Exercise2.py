@@ -50,3 +50,18 @@ def describe_words(*words):
 
 
 describe_words('apple','banana','asdasdasdasd','the')
+
+def sum_numbers_only(*arguments):
+    #Now this function you see, it is gonna sum only numbers and ignore all the rest
+    total = 0
+    for argument in arguments:
+        if str(argument).isdigit():
+            total += int(argument)
+        else:
+            continue
+    return total    
+
+
+
+print(sum_numbers_only(1,2,5,'asd','whatever'))
+
