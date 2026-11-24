@@ -26,4 +26,26 @@ def pig_latin_pont():
     
     print(f"The translation in pig latin is {pword}")
 
-pig_latin_pont()
+#Okay now it is an alternative version of pig latin, we check to see whether if the word contains two different vowels first
+
+
+def pig_two():
+    word = input("Type your word here")
+    pigword = ''
+    print(f"The word is {word}")
+    count = 0
+    for character in word:
+        if character.lower() in 'aeiou':
+            count+=1
+    print(f"{count}")        
+    if count == 0:
+        pigword = word
+    elif count == 1:
+        pigword = word[1:]+word[0]+'ay'
+    elif count >= 2:
+        pigword = word+'way'
+    print(f"{pigword}")            
+        
+        
+pig_two()
+
