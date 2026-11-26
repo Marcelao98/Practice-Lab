@@ -1,0 +1,36 @@
+ 1031  # now ctral a to the begiining, and e to the end
+ 1032  #f fordward and b back for ctrl
+ 1033  #alt is for word
+ 1034  # now ctrl l would delete clean the istory
+ 1035  ,,,,,,asdasdasdasdasdss
+ 1036  #Okay this is killing shit hhahahaha
+ 1037  #damn ctrl k and ctrl u are pretty useful
+ 1038  #Man here i wsa you see just typing this shit you see oh i see these jut shortcuts are pretty damn sueful huh, most word editors should have them actually 
+ 1039  #Now man i really like this you see this shit is cool haha l  
+ 1040  history | tail -1
+ 1041  history 1041
+ 1042  history -d 1025
+ 1043  ls
+ 1044  history | tail -1
+ 1045  cd
+ 1046  ls
+ 1047  cd Down*
+ 1048  ls #oh i see tab is pretty useful huh
+ 1049  cd ..
+ 1050  ls Downloads/
+ 1051  
+ 1052  lo 'Kof Games'
+ 1053  
+ 1054  cd Imagens/
+ 1055  cd ..
+ 1056  cd Repositórios/
+ 1057  pwd
+ 1058  history | grep "ls | less
+ 1059  history
+ 1060  history | less
+ 1061  cd ..
+ 1062  ls
+ 1063  cd Practice-Lab/
+ 1064  cd linux/
+ 1065  cd TLCL/
+ 1066  history | awk '$1 >= 1031' > chapter8.txt
